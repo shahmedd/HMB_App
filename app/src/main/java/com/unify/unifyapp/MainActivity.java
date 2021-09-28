@@ -12,5 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Bundle bundle = new Bundle();
+        bundle.putString("url", "http://10.0.2.2:3000/unify_json");
+        Unify.getInstance().initialize(this, null, bundle);
     }
 }
