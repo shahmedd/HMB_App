@@ -1,0 +1,4 @@
+[submodule "core"]
+	path = core
+	url = http://gitlab1.avanzasolutions.com:8081/visual-designer-renderer/platform-frontend/android/core.git
+	branch = master

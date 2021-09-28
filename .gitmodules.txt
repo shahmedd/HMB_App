@@ -1,3 +1,0 @@
-[submodule "path_to_submodule"] 
-  path = E:\Unify\app\core 
-  url = http://gitlab1.avanzasolutions.com:8081/visual-designer-renderer/platform-frontend/android/core.git
