@@ -51,6 +51,8 @@
         </activity>
         <activity android:name=".anyline.ScanMrzActivity" />
         <activity android:name=".anyline.ScanViewResultActivity" />
+        <activity android:name=".anyline.ScanUniversalIdActivity" />
+        <activity android:name=".anyline.ScanUniversalIdResultActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.unify.avanza.Unify;
 import com.unify.avanza.anyline.IUnifyAnyLine;
 import com.unify.unifyapp.anyline.ScanMrzActivity;
+import com.unify.unifyapp.anyline.ScanUniversalIdActivity;
 
 import at.nineyards.anyline.core.LicenseException;
 import io.anyline.AnylineSDK;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements IUnifyAnyLine {
     }
 
     @Override
-    public void onStartScanning() {
+    public void onStartPassportScanning() {
         try {
             AnylineSDK.init(getString(R.string.anyline_license_key), this);
         } catch (LicenseException e) {
@@ -35,7 +36,12 @@ public class MainActivity extends AppCompatActivity implements IUnifyAnyLine {
     }
 
     @Override
-    public void onConfirmClick() {
+    public void onStartUniversalIdScanning() {
+        try {
+            AnylineSDK.init(getString(R.string.anyline_license_key), this);
+        } catch (LicenseException e) {
 
+        }
+        startActivity(new Intent(this, ScanUniversalIdActivity.class));
     }
 }
