@@ -65,6 +65,8 @@ public class ScanUniversalIdActivity extends ScanActivity implements ScanRunSkip
 
             setupScanProcessView(ScanUniversalIdActivity.this, idScanResult, getScanModule());
 
+            finish();
+
         });
     }
 

@@ -13,6 +13,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.unify.avanza.stores.InAppMemoryStore;
 import com.unify.unifyapp.R;
 
 import java.util.HashMap;
@@ -131,6 +132,7 @@ public class ScanViewResultActivity extends ScanningConfigurationActivity {
             if (result.get(getResources().getString(R.string.mrz_viz_address)) != null) {
                 orderedHashMap.put(getResources().getString(R.string.mrz_viz_address), result.get(getResources().getString(R.string.mrz_viz_address)));
             }
+            InAppMemoryStore.getInstance().updateDataWithoutNotify("scanPassport", orderedHashMap);
 
             scanResultAdapter = new BaseGridAdapter(this.getApplicationContext(), orderedHashMap);
 

@@ -6,9 +6,6 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -19,6 +16,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.unify.avanza.services.ServiceManager;
+import com.unify.avanza.stores.InAppMemoryStore;
 import com.unify.unifyapp.R;
 
 import java.io.IOException;
@@ -56,8 +55,14 @@ public class ScanUniversalIdResultActivity extends ScanningConfigurationActivity
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-        confirmButton.setOnClickListener(v ->
-                finish());
+
+
+        confirmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         Intent intent = getIntent();
         if (intent != null) {
             Bundle extras = getIntent().getExtras();
@@ -67,7 +72,7 @@ public class ScanUniversalIdResultActivity extends ScanningConfigurationActivity
             for (int i = 0; i < resultKeys.length; i++) {
                 resultMap.put(resultKeys[i], resultValues[i]);
             }
-
+            InAppMemoryStore.getInstance().updateDataWithoutNotify("scanUniversalId", resultMap);
             Bitmap bmp = BitmapUtil.getBitmap(extras.getString(Constant.SCAN_FULL_PICTURE_PATH));
             if (bmp == null) {
                 frontSideTextView.setVisibility(View.VISIBLE);
@@ -116,7 +121,6 @@ public class ScanUniversalIdResultActivity extends ScanningConfigurationActivity
     protected ScanModuleEnum.ScanModule getScanModule() {
         return null;
     }
-
 
 
     private void shareData() {
