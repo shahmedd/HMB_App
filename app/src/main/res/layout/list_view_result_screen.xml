@@ -12,10 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/count"
-        android:layout_toLeftOf="@+id/count"
-        android:layout_toEndOf="@id/icon"
-        android:layout_toRightOf="@id/icon"
         android:orientation="vertical">
 
         <TextView

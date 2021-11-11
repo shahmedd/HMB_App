@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity(), IDocumentScanner, IUnifyNetworkService
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val bundle = Bundle()
-//        bundle.putString("url", "http://10.0.2.2:3000/unify_json")
+        bundle.putString("url", "http://10.0.2.2:3000/unify_json")
 //        bundle.putString("url", "http://192.168.100.158:3000/unify_json")
-        bundle.putString("url", "https://run.mocky.io/v3/f1a00d07-1a9f-4da9-a65d-e74d072b14ef")
+//        bundle.putString("url", "https://run.mocky.io/v3/f1a00d07-1a9f-4da9-a65d-e74d072b14ef")
         Unify.getInstance().initialize(this, null, this, this, bundle)
     }
 
