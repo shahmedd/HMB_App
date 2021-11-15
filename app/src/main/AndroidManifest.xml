@@ -2,31 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.unify.unifyapp">
-    <permission
-        android:name="android.permission.ACCESS_FINE_LOCATION"
-        android:protectionLevel="signature" />
-    <permission
-        android:name="android.permission.ACCESS_COARSE_LOCATION"
-        android:protectionLevel="signature" />
-    <permission
-        android:name="android.permission.READ_PHONE_STATE"
-        android:protectionLevel="signature" />
-    <permission
-        android:name="com.package.name.permission.C2D_MESSAGE"
-        android:protectionLevel="signature" />
-    <permission
-        android:name="com.avanza.ambitwizPD.permission.TOKEN_UPDATE"
-        android:protectionLevel="signature" />
-    <permission
-        android:name="android.permission.CAMERA"
-        android:protectionLevel="signature" />
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -34,25 +14,20 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        tools:replace="android:allowBackup"
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".anyline.ScanMrzActivity" />
-        <activity android:name=".anyline.ScanViewResultActivity" />
-        <activity android:name=".anyline.ScanUniversalIdActivity" />
-        <activity android:name=".anyline.ScanUniversalIdResultActivity" />
+
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -65,6 +40,7 @@
                 android:resource="@xml/provider_paths"
                 tools:replace="android:resource" />
         </provider>
+
     </application>
 
 </manifest>

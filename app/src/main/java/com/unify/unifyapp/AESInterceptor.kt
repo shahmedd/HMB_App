@@ -4,6 +4,7 @@ import com.unify.avanza.services.network.IUnifyInterceptor
 import okhttp3.Interceptor
 import okhttp3.Response
 import java.io.IOException
+import kotlin.jvm.Throws
 
 object AESInterceptor : Interceptor, IUnifyInterceptor {
     @Throws(IOException::class)
