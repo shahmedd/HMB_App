@@ -14,12 +14,27 @@
 
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+-keepattributes SourceFile,LineNumberTable
 
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--dontshrink
--dontoptimize
--dontpreverify
+#-dontshrink
+#-dontoptimize
+#-dontpreverify
+
+-keepattributes *Annotation*
+-keepclassmembers class * {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+
+# And if you use AsyncExecutor:
+-keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
+    <init>(java.lang.Throwable);
+}
+-keep interface com.unify.avanza.services.network.RootService { *; }
+-keep class com.unify.avanza.models.* { *; }
+-keep class com.unify.avanza.services.* { *; }
+-keep class com.unify.avanza.services.network.* { *; }
