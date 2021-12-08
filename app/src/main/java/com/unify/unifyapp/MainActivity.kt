@@ -2,6 +2,7 @@ package com.unify.unifyapp
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.unify.avanza.EventKeyValue
 import com.unify.avanza.app.Unify
@@ -17,13 +18,7 @@ class MainActivity : AppCompatActivity(), IUnifyNetworkService {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val bundle = Bundle()
-//        bundle.putString("url", "http://10.0.2.2:3000/unify_json")
-        bundle.putString("url", "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/eKYC.json")
-        Unify.getInstance().initialize(this, null, this, bundle)
         EventBus.getDefault().register(this)
-
-
     }
 
 
@@ -44,5 +39,13 @@ class MainActivity : AppCompatActivity(), IUnifyNetworkService {
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(event: EventKeyValue) {
         Log.d("Received in host app", event.bindingKey + " : " + event.value)
+    }
+
+    fun InitializSDK(view: View) {
+        Unify.getInstance().initializeSDK(this, "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/eKYC.json",null,this)
+    }
+
+    fun LaunchSDK(view: View) {
+        Unify.getInstance().launchSDK(this, null);
     }
 }
