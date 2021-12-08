@@ -85,6 +85,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation project(":core")
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'org.greenrobot:eventbus:3.2.0'
 
     implementation 'com.google.android.gms:play-services:9.2.1'
     testImplementation 'junit:junit:4.12'
