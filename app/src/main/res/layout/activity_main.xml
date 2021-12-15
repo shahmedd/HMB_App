@@ -11,12 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="InitializSDK"
-        android:text="Initialize" />
+        android:text="Initialize"
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="LaunchSDK"
-        android:text="Launch SDK" />
+        android:text="Launch SDK"
+        android:textStyle="italic|bold" />
 
 </LinearLayout>
