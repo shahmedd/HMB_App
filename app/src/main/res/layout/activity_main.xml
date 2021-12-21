@@ -10,14 +10,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="InitializSDK"
+        android:onClick="initializeSDK"
         android:text="Initialize"
         android:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="LaunchSDK"
+        android:onClick="launchSDK"
         android:text="Launch SDK"
         android:textStyle="italic|bold" />
 
