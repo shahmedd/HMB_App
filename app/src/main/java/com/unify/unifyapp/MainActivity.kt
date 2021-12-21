@@ -11,8 +11,6 @@ import com.unify.avanza.services.network.IUnifyNetworkService
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import java.util.*
-import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity(), IUnifyNetworkService {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +30,7 @@ class MainActivity : AppCompatActivity(), IUnifyNetworkService {
     }
 
     override fun getValueAgainstBindingKey(): List<String> {
-        return listOf("usCitizenSwitch")
+        return listOf("expire")
 
     }
 
@@ -41,11 +39,14 @@ class MainActivity : AppCompatActivity(), IUnifyNetworkService {
         Log.d("Received in host app", event.bindingKey + " : " + event.value)
     }
 
-    fun InitializSDK(view: View) {
-        Unify.getInstance().initializeSDK(this, "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/eKYC.json",null,this)
+
+    fun initializeSDK(view: View) {
+        val dataFromHostapp: MutableMap<String, Any> = HashMap();
+        dataFromHostapp["CPR"] = "00700" // this value provide by host app
+        Unify.getInstance().initializeSDK(this, "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/eKYC.json", dataFromHostapp, null, this)
     }
 
-    fun LaunchSDK(view: View) {
+    fun launchSDK(view: View) {
         Unify.getInstance().launchSDK(this, null);
     }
 }
