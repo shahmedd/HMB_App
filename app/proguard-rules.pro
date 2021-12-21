@@ -38,10 +38,11 @@
 -keep class com.unify.avanza.models.* { *; }
 -keep class com.unify.avanza.services.* { *; }
 -keep class com.unify.avanza.services.network.* { *; }
+-keep class com.jumio.** { *; }
+-keep class jumio.** { *; }
 -keep class com.microblink.** { *; }
 -keep class com.microblink.**$* { *; }
 -keep public class com.iproov.sdk.IProov {public *; }
-
 -keep class org.jmrtd.** { *; }
 -keep class net.sf.scuba.** {*;}
 -keep class org.bouncycastle.** {*;}
