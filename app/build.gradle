@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
     compileOptions {
-//        coreLibraryDesugaringEnabled true
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
@@ -15,30 +15,25 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-//        multiDexEnabled true
-        /*ndk {
-            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
-        }*/
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+            universalApk true
+        }
+        density {
+            enable true // just enable them all
+        }
+
+    }
+
     dataBinding {
         enabled true
     }
 
-//    kotlinOptions {
-//        jvmTarget = "1.8"
-//    }
-//
-//    packagingOptions {
-//        exclude 'META-INF/proguard/coroutines.pro'
-//    }
-//
-//    buildFeatures {
-//        viewBinding true
-//    }
-
-
-//    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/TrainedModels'] } }
 
     signingConfigs {
         release {
@@ -65,20 +60,10 @@ android {
             debuggable true
             shrinkResources false
             minifyEnabled false
-//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-
         }
     }
-//    lintOptions {
-//        checkReleaseBuilds false
-//        // Or, if you prefer, you can continue to check for errors in release builds,
-//        // but continue the build even when errors are found:
-//        abortOnError false
-//    }
 }
-configurations {
-    customImplementation
-}
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.3.1'

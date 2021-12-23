@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.unify.avanza.EventKeyValue
+import com.unify.avanza.UnifyRuntimePermission
 import com.unify.avanza.app.Unify
 import com.unify.avanza.services.network.IUnifyInterceptor
 import com.unify.avanza.services.network.IUnifyNetworkService
@@ -41,12 +42,16 @@ class MainActivity : AppCompatActivity(), IUnifyNetworkService {
 
 
     fun initializeSDK(view: View) {
-        val dataFromHostapp: MutableMap<String, Any> = HashMap();
-        dataFromHostapp["CPR"] = "00700" // this value provide by host app
-        Unify.getInstance().initializeSDK(this, "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/eKYC.json", dataFromHostapp, null, this)
+        UnifyRuntimePermission.getInstance().getPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) {
+            val dataFromHostapp: MutableMap<String, Any> = HashMap();
+            dataFromHostapp["CPR"] = "00700" // this value provide by host app
+            Unify.getInstance().initializeSDK(this, "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/eKYC.json", dataFromHostapp, null, this)
+        }
     }
 
     fun launchSDK(view: View) {
-        Unify.getInstance().launchSDK(this, null);
+        UnifyRuntimePermission.getInstance().getPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) {
+            Unify.getInstance().launchSDK(this, null);
+        }
     }
 }
