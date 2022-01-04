@@ -1,0 +1,248 @@
+{
+  "code": 1,
+  "message": "test",
+  "content": {
+    "$schema": "./unify_config_schema.json",
+    "schemaVersion": "1.0.0",
+    "projectId": 1,
+    "config": {
+      "id": 1,
+      "version": "1.0.0",
+      "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+      "mainComponentId": "faqConstraint",
+      "components": [
+        {
+          "id": "faqConstraint",
+          "Comment": "constraint",
+          "type": "CONSTRAINT",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "background": "drawable/bg",
+              "layout_height": "match_parent",
+              "layout_width": "match_parent"
+            },
+            "events": [
+              {
+                "type": "ONLOAD",
+                "Comment": "on click",
+                "triggerId": "get_User_Details"
+              }
+            ],
+            "componentId": [
+              "faqTableView"
+            ],
+            "Comment": "recycler component"
+          }
+        },
+        {
+          "id": "faqTableView",
+          "Comment": "faq tableView",
+          "type": "ELIST",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "user.content",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "equal_height": "faqConstraint",
+              "equal_width": "faqConstraint",
+              "parentId": "faqParentConstraint",
+              "childId": "faqChildConstraint",
+              "groupTitleKey": "title",
+              "groupItemsKey": "data"
+            }
+          }
+        },
+        {
+          "id": "faqParentConstraint",
+          "Comment": "Constraint",
+          "type": "CONSTRAINT",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "clickable": true
+            },
+            "componentId": [
+              "faqSectionHeader"
+            ]
+          },
+          "events": [
+            {
+              "type": "ONCLICK",
+              "Comment": "on section header click",
+              "triggerId": "get_FAQ_Child"
+            }
+          ]
+        },
+        {
+          "id": "faqSectionHeader",
+          "Comment": "uilabel list item",
+          "type": "TEXTVIEW",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "title",
+          "attributes": {
+            "layoutProperties": {
+              "tag": "groupName",
+              "text": "Header item",
+              "layout_height": "40",
+              "textColor": "#042E4C",
+              "textSize": 20,
+              "background": "#ffffff",
+              "paddingTop": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "textStyle": "bold"
+            }
+          }
+        },
+        {
+          "id": "faqChildConstraint",
+          "Comment": "Constraint",
+          "type": "CONSTRAINT",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent"
+            },
+            "componentId": [
+              "faqChildQuestion",
+              "faqChildAnswer"
+            ]
+          }
+        },
+        {
+          "id": "faqChildQuestion",
+          "Comment": "textview list item",
+          "type": "TEXTVIEW",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "key",
+          "attributes": {
+            "layoutProperties": {
+              "text": "child item",
+              "textColor": "#000000",
+              "layout_marginTop": 0,
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_height": "30",
+              "layout_width": "match_parent",
+              "textSize": 18,
+              "tag": "question",
+              "background": "#ffffff",
+              "paddingTop": 5,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingBottom": 0,
+              "topToTopOf": "faqChildConstraint",
+              "leftToLeftOf": "faqChildConstraint",
+              "rightToRightOf": "faqChildConstraint"
+            }
+          }
+        },
+        {
+          "id": "faqChildAnswer",
+          "Comment": "textview list item",
+          "type": "TEXTVIEW",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "value",
+          "attributes": {
+            "layoutProperties": {
+              "paddingTop": 5,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingBottom": 5,
+              "text": "child item",
+              "textColor": "#042E4C",
+              "layout_marginTop": 0,
+              "layout_width": "match_parent",
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginBottom": 0,
+              "topToBottomOf": "faqChildQuestion",
+              "leftToLeftOf": "faqChildConstraint",
+              "rightToRightOf": "faqChildConstraint",
+              "bottomToBottomOf": "faqChildConstraint",
+              "textSize": 14,
+              "tag": "answer",
+              "background": "#ffffff",
+              "numberOfLines": 0
+            }
+          }
+        }
+      ],
+      "triggers": [
+        {
+          "id": "get_User_Details",
+          "Comment": "get User Details",
+          "services": [
+            {
+              "type": "NETWORK",
+              "Comment": "Network Service",
+              "command": {
+                "type": 1,
+                "Comment": "post api",
+                "attributes": {
+                  "method": "POST",
+                  "responseBody": "user",
+                  "url": "https://33edb047-2a10-450f-8059-a0c11b719406.mock.pstmn.io/getUnifyConfiguration",
+                  "header": {
+                    "Content-Type": "application/json"
+                  }
+                },
+                "returnCode": [
+                  {
+                    "code": "200",
+                    "triggerId": "navigate_To_cust_Id",
+                    "value": "user.errorCode"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "assets": [
+      {
+        "id": 1,
+        "uri": "https://assets.unify.com/splash.mp4",
+        "checksum": "098f6bcd4621d373cade4e832627b4f6"
+      },
+      {
+        "id": 2,
+        "uri": "https://assets.unify.com/logo.jpg",
+        "checksum": "098f6bcd4621d373cade4e832627b4f6"
+      },
+      {
+        "id": 3,
+        "uri": "https://assets.unify.com/defaultImage.jpg",
+        "checksum": "098f6bcd4621d373cade4e832627b4f6"
+      },
+      {
+        "id": 4,
+        "uri": "https://assets.unify.com/bgImage.jpg",
+        "checksum": "098f6bcd4621d373cade4e832627b4f6"
+      },
+      {
+        "id": 5,
+        "uri": "https://assets.unify.com/buttonImage.jpg",
+        "checksum": "098f6bcd4621d373cade4e832627b4f6"
+      },
+      {
+        "id": 6,
+        "uri": "https://assets.unify.com/buttonOnHoverImage.jpg",
+        "checksum": "098f6bcd4621d373cade4e832627b4f6"
+      },
+      {
+        "id": 7,
+        "uri": "https://assets.unify.com/buttonOnClickImage.jpg",
+        "checksum": "098f6bcd4621d373cade4e832627b4f6"
+      },
+      {
+        "id": 8,
+        "uri": "https://assets.unify.com/buttonBgImage.jpg",
+        "checksum": "098f6bcd4621d373cade4e832627b4f6"
+      }
+    ]
+  }
+}

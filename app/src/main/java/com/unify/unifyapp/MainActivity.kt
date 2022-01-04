@@ -45,7 +45,9 @@ class MainActivity : AppCompatActivity(), IUnifyNetworkService {
         UnifyRuntimePermission.getInstance().getPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) {
             val dataFromHostapp: MutableMap<String, Any> = HashMap();
             dataFromHostapp["CPR"] = "00700" // this value provide by host app
-            Unify.getInstance().initializeSDK(this, "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/eKYC.json", dataFromHostapp, null, this)
+//            Unify.getInstance().initializeSDK(this, "http://10.0.2.2:3000/unify_json", dataFromHostapp, null, this)
+//            Unify.getInstance().initializeSDK(this, "http://172.16.2.229:3000/unify_json", dataFromHostapp, null, this)
+            Unify.getInstance().initializeSDK(this, "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/presales_new_demo.json", dataFromHostapp, null, this)
         }
     }
 
@@ -54,4 +56,5 @@ class MainActivity : AppCompatActivity(), IUnifyNetworkService {
             Unify.getInstance().launchSDK(this, null);
         }
     }
+
 }

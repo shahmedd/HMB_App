@@ -1,0 +1,6131 @@
+{
+  "code": 1,
+  "message": "test",
+  "content": {
+    "$schema": "./unify_config_schema.json",
+    "schemaVersion": "1.0.0",
+    "projectId": 1,
+    "config": {
+      "id": 1,
+      "version": "1.0.0",
+      "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+      "mainComponentId": 100011,
+      "components": [
+        {
+          "id": 1234567,
+          "comment": "navBar",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content"
+            },
+            "componentId": [
+              123456
+            ]
+          }
+        },
+        {
+          "id": 123456,
+          "Comment": "last_login_user",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "centerX": 0,
+              "centerY": 0,
+              "text": "Unify App",
+              "textColor": "#ffffff",
+              "textSize": 18,
+              "orientation": "left"
+            }
+          }
+        },
+        {
+          "id": 12345,
+          "Comment": "tabbarController",
+          "type": 100015,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "background": "#C7D9F5"
+            },
+            "componentId": [
+              100147,
+              100148
+            ]
+          }
+        },
+        {
+          "id": 100147,
+          "Comment": "tabbarItem",
+          "type": 100016,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "tabTitle": "Overview",
+              "tabDefaultIcon": "tabbar/defaultOverview",
+              "tabSelectedIcon": "tabbar/selectedOverview"
+            },
+            "componentId": [
+              110073
+            ]
+          }
+        },
+        {
+          "id": 100148,
+          "Comment": "tabbarItem",
+          "type": 100016,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "tabTitle": "Menu",
+              "tabDefaultIcon": "tabbar/defaultMenu",
+              "tabSelectedIcon": "tabbar/selectedMenu"
+            },
+            "componentId": [
+              480000
+            ]
+          }
+        },
+        {
+          "id": 100011,
+          "Comment": "constraint layout",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent",
+              "orientation": "vertical",
+              "background": "drawable/bg",
+              "hideNavBar": true
+            },
+            "componentId": [
+              200001
+            ],
+            "events": [
+              {
+                "type": 0,
+                "Comment": "on animation load",
+                "triggerId": 17
+              }
+            ],
+            "Comment": "splash component"
+          }
+        },
+        {
+          "id": 200001,
+          "Comment": "Lottie animation",
+          "type": 100012,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent",
+              "src": "bipl.json"
+            },
+            "events": [
+              {
+                "type": 2,
+                "Comment": "on animation end",
+                "triggerId": 1
+              }
+            ]
+          }
+        },
+        {
+          "id": 1230123,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent",
+              "background": "drawable/bg",
+              "hideNavBar": false,
+              "navBarColor": "#3f25c4",
+              "navBarId": 1234567
+            },
+            "componentId": [
+              100012,
+              50003,
+              50006,
+              50007,
+              50015,
+              50012,
+              50018,
+              50024,
+              50021,
+              50027,
+              50030,
+              50031,
+              50032
+            ],
+            "Comment": "pre-Login Screen"
+          }
+        },
+        {
+          "id": 100012,
+          "Comment": "imageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "120",
+              "layout_height": "80",
+              "leftToLeftOf": 1230123,
+              "topToTopOf": 1230123,
+              "layout_marginTop": 20,
+              "layout_marginLeft": 20,
+              "src": "drawable/ambit_logo"
+            }
+          }
+        },
+        {
+          "id": 50003,
+          "Comment": "radioGroup",
+          "type": 100013,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "120",
+              "layout_height": "40",
+              "layout_marginTop": 40,
+              "layout_marginRight": 4,
+              "topToTopOf": 1230123,
+              "rightToRightOf": 1230123,
+              "orientation": "horizontal",
+              "background": "drawable/toggle_background"
+            },
+            "componentId": [
+              50004,
+              50005
+            ]
+          }
+        },
+        {
+          "id": 50004,
+          "Comment": "radiobutton",
+          "type": 100014,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "48",
+              "layout_height": "40",
+              "layout_weight": 1,
+              "text": "English",
+              "checked": true,
+              "textColor": "#FFFFFF",
+              "gravity": "gravityCenter",
+              "textAlignment": "center",
+              "background": "drawable/toggle_selector"
+            }
+          }
+        },
+        {
+          "id": 50005,
+          "Comment": "radiobutton",
+          "type": 100014,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "48",
+              "layout_height": "40",
+              "layout_weight": 1,
+              "text": "Urdu",
+              "checked": false,
+              "textColor": "#FFFFFF",
+              "gravity": "gravityCenter",
+              "textAlignment": "center",
+              "background": "drawable/toggle_selector"
+            }
+          }
+        },
+        {
+          "id": 50006,
+          "Comment": "textView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "leftToLeftOf": 1230123,
+              "topToBottomOf": 100012,
+              "layout_marginLeft": 20,
+              "text": "welcome to\nAmbit Mobile Banking\nSolutions",
+              "textColor": "#ffffff",
+              "textSize": 20,
+              "layout_marginTop": 0
+            }
+          }
+        },
+        {
+          "id": 50007,
+          "comment": "last_login_panel",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "50",
+              "rightToRightOf": 1230123,
+              "topToBottomOf": 50006,
+              "leftToLeftOf": 1230123,
+              "layout_marginLeft": 28,
+              "layout_marginRight": 28,
+              "layout_marginTop": 50,
+              "background": "#C0000000",
+              "cornerRadius": 8
+            },
+            "componentId": [
+              50008,
+              50009,
+              50010,
+              50011
+            ]
+          }
+        },
+        {
+          "id": 50008,
+          "comment": "last_login_avatar",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "52",
+              "layout_height": "40",
+              "leftToLeftOf": 50007,
+              "topToTopOf": 50007,
+              "bottomToBottomOf": 50007,
+              "layout_marginTop": 5,
+              "layout_marginLeft": 5,
+              "layout_marginBottom": 5,
+              "src": "drawable/ic_profile_vector"
+            }
+          }
+        },
+        {
+          "id": 50009,
+          "Comment": "last_login_time/date",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "80",
+              "leftToRightOf": 50008,
+              "bottomToBottomOf": 50007,
+              "topToTopOf": 50007,
+              "text": "Last Login\n23-02-1992",
+              "textColor": "#ffffff",
+              "textSize": 12,
+              "layout_marginTop": 5,
+              "layout_marginBottom": 5,
+              "layout_marginLeft": 5
+            }
+          }
+        },
+        {
+          "id": 50010,
+          "Comment": "last_login_user",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "leftToRightOf": 50009,
+              "bottomToBottomOf": 50007,
+              "topToTopOf": 50007,
+              "layout_marginLeft": 16,
+              "text": "Sohaib Kabeer",
+              "textColor": "#ffffff",
+              "textSize": 14,
+              "layout_marginTop": 5,
+              "layout_marginBottom": 5
+            }
+          }
+        },
+        {
+          "id": 50011,
+          "comment": "last_login_arrow",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "38",
+              "layout_height": "38",
+              "rightToRightOf": 50007,
+              "topToTopOf": 50007,
+              "bottomToBottomOf": 50007,
+              "layout_marginRight": 5,
+              "layout_marginTop": 5,
+              "background": "drawable/login_arrow"
+            }
+          }
+        },
+        {
+          "id": 50012,
+          "comment": "contactUs",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "90",
+              "layout_height": "90",
+              "layout_marginRight": 40,
+              "layout_marginTop": 40,
+              "rightToLeftOf": 50015,
+              "topToBottomOf": 50007,
+              "background": "#66FFFFFF",
+              "cornerRadius": 8
+            },
+            "componentId": [
+              50013,
+              50014
+            ]
+          }
+        },
+        {
+          "id": 50013,
+          "comment": "contactLogo",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "24",
+              "layout_height": "24",
+              "layout_marginTop": 8,
+              "layout_marginRight": 8,
+              "topToTopOf": 50012,
+              "rightToRightOf": 50012,
+              "src": "drawable/contact_us"
+            }
+          }
+        },
+        {
+          "id": 50014,
+          "Comment": "contactLabel",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "leftToLeftOf": 50012,
+              "bottomToBottomOf": 50012,
+              "rightToRightOf": 50012,
+              "layout_marginBottom": 24,
+              "text": "Contact Us",
+              "textColor": "#ffffff",
+              "textSize": 12
+            }
+          }
+        },
+        {
+          "id": 50015,
+          "comment": "exchange",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "centerX": 1230123,
+              "layout_width": "90",
+              "layout_height": "90",
+              "layout_marginTop": 40,
+              "topToBottomOf": 50007,
+              "background": "#66FFFFFF",
+              "cornerRadius": 8
+            },
+            "componentId": [
+              50016,
+              50017
+            ]
+          }
+        },
+        {
+          "id": 50016,
+          "comment": "exchangeLogo",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "24",
+              "layout_height": "24",
+              "layout_marginTop": 8,
+              "layout_marginRight": 8,
+              "topToTopOf": 50015,
+              "rightToRightOf": 50015,
+              "src": "drawable/exchang_rate"
+            }
+          }
+        },
+        {
+          "id": 50017,
+          "Comment": "ExchangeLabel",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "leftToLeftOf": 50015,
+              "bottomToBottomOf": 50015,
+              "rightToRightOf": 50015,
+              "layout_marginBottom": 24,
+              "text": "Exchange",
+              "textColor": "#ffffff",
+              "textSize": 12
+            }
+          }
+        },
+        {
+          "id": 50018,
+          "comment": "products",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "90",
+              "layout_height": "90",
+              "layout_marginTop": 40,
+              "layout_marginLeft": 40,
+              "leftToRightOf": 50015,
+              "topToBottomOf": 50007,
+              "background": "#66FFFFFF",
+              "cornerRadius": 8
+            },
+            "componentId": [
+              50019,
+              50020
+            ]
+          }
+        },
+        {
+          "id": 50019,
+          "comment": "productsLogo",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "24",
+              "layout_height": "24",
+              "layout_marginTop": 8,
+              "layout_marginRight": 8,
+              "topToTopOf": 50018,
+              "rightToRightOf": 50018,
+              "src": "drawable/offer"
+            }
+          }
+        },
+        {
+          "id": 50020,
+          "Comment": "productsLabel",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "leftToLeftOf": 50018,
+              "bottomToBottomOf": 50018,
+              "rightToRightOf": 50018,
+              "layout_marginBottom": 24,
+              "text": "Products",
+              "textColor": "#ffffff",
+              "textSize": 12
+            }
+          }
+        },
+        {
+          "id": 50021,
+          "comment": "Location",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "90",
+              "layout_height": "90",
+              "layout_marginRight": 40,
+              "layout_marginTop": 40,
+              "rightToLeftOf": 50024,
+              "topToBottomOf": 50015,
+              "background": "#66FFFFFF",
+              "cornerRadius": 8
+            },
+            "componentId": [
+              50022,
+              50023
+            ]
+          }
+        },
+        {
+          "id": 50022,
+          "comment": "locationLogo",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "24",
+              "layout_height": "24",
+              "layout_marginTop": 8,
+              "layout_marginRight": 8,
+              "topToTopOf": 50021,
+              "rightToRightOf": 50021,
+              "src": "drawable/location_icon"
+            }
+          }
+        },
+        {
+          "id": 50023,
+          "Comment": "locationLabel",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "leftToLeftOf": 50021,
+              "bottomToBottomOf": 50021,
+              "rightToRightOf": 50021,
+              "layout_marginBottom": 24,
+              "text": "Location",
+              "textColor": "#ffffff",
+              "textSize": 12
+            }
+          }
+        },
+        {
+          "id": 50024,
+          "comment": "Deposit",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "centerX": 1230123,
+              "layout_width": "90",
+              "layout_height": "90",
+              "layout_marginTop": 40,
+              "topToBottomOf": 50015,
+              "background": "#66FFFFFF",
+              "cornerRadius": 8
+            },
+            "componentId": [
+              50025,
+              50026
+            ]
+          }
+        },
+        {
+          "id": 50025,
+          "comment": "depositLogo",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "24",
+              "layout_height": "24",
+              "layout_marginTop": 8,
+              "layout_marginRight": 8,
+              "topToTopOf": 50024,
+              "rightToRightOf": 50024,
+              "src": "drawable/deposit_rate"
+            }
+          }
+        },
+        {
+          "id": 50026,
+          "Comment": "depositLabel",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "leftToLeftOf": 50024,
+              "bottomToBottomOf": 50024,
+              "rightToRightOf": 50024,
+              "layout_marginBottom": 24,
+              "text": "Deposit",
+              "textColor": "#ffffff",
+              "textSize": 12
+            }
+          }
+        },
+        {
+          "id": 50027,
+          "comment": "Card Activation",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "90",
+              "layout_height": "90",
+              "layout_marginTop": 40,
+              "layout_marginLeft": 40,
+              "leftToRightOf": 50024,
+              "topToBottomOf": 50015,
+              "background": "#66FFFFFF",
+              "cornerRadius": 8
+            },
+            "componentId": [
+              50028,
+              50029
+            ]
+          }
+        },
+        {
+          "id": 50028,
+          "comment": "cardActiveLogo",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "24",
+              "layout_height": "24",
+              "layout_marginTop": 8,
+              "layout_marginRight": 8,
+              "topToTopOf": 50027,
+              "rightToRightOf": 50027,
+              "src": "drawable/security"
+            }
+          }
+        },
+        {
+          "id": 50029,
+          "Comment": "cardActivationLabel",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "68",
+              "leftToLeftOf": 50027,
+              "bottomToBottomOf": 50027,
+              "rightToRightOf": 50018,
+              "layout_marginBottom": 24,
+              "text": "Card\nActivation",
+              "textColor": "#ffffff",
+              "textSize": 12
+            }
+          }
+        },
+        {
+          "id": 50100,
+          "comment": "invisible_panel",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "2",
+              "rightToRightOf": 1230123,
+              "topToBottomOf": 50024,
+              "leftToLeftOf": 1230123,
+              "bottomToTopOf": 50031,
+              "layout_marginLeft": 28,
+              "layout_marginRight": 28,
+              "layout_marginBottom": 16,
+              "background": null
+            }
+          }
+        },
+        {
+          "id": 50030,
+          "Comment": "signUpBtn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "160",
+              "layout_height": "30",
+              "leftToLeftOf": 1230123,
+              "topToBottomOf": 50024,
+              "layout_marginLeft": 20,
+              "layout_marginTop": 36,
+              "text": "Want to SignUp?",
+              "textAlignment": "center",
+              "textColor": "#ffffff",
+              "textSize": 18
+            }
+          }
+        },
+        {
+          "id": 50031,
+          "Comment": "loginBtn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "160",
+              "layout_height": "50",
+              "leftToRightOf": 50030,
+              "topToBottomOf": 50027,
+              "rightToRightOf": 1230123,
+              "layout_marginLeft": 60,
+              "layout_marginTop": 36,
+              "layout_marginRight": 20,
+              "text": "Login",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "textSize": 18,
+              "background": "#ffffff",
+              "textStyle": "bold",
+              "cornerRadius": 8
+            },
+            "events": [
+              {
+                "type": 1,
+                "Comment": "on animation end",
+                "triggerId": 2
+              }
+            ]
+          }
+        },
+        {
+          "id": 50032,
+          "Comment": "faqBtn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "180",
+              "layout_height": "30",
+              "leftToLeftOf": 1230123,
+              "topToBottomOf": 50030,
+              "layout_marginLeft": 20,
+              "layout_marginTop": 0,
+              "text": "Frequently Asked Questions",
+              "textAlignment": "center",
+              "textColor": "#ffffff",
+              "textSize": 14,
+              "layout_marginBottom": 0
+            },
+            "events": [
+              {
+                "type": 1,
+                "Comment": "on faq text click",
+                "triggerId": 3
+              }
+            ]
+          }
+        },
+        {
+          "id": 101122,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent",
+              "background": "drawable/bg",
+              "hideNavBar": true
+            },
+            "componentId": [
+              10012,
+              10017,
+              50110,
+              50111,
+              70006,
+              10025,
+              10026,
+              50112,
+              50212,
+              50213
+            ],
+            "Comment": "Login Screen"
+          }
+        },
+        {
+          "id": 10012,
+          "Comment": "imageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "120",
+              "layout_height": "80",
+              "leftToLeftOf": 101122,
+              "topToTopOf": 101122,
+              "layout_marginTop": 20,
+              "layout_marginLeft": 20,
+              "src": "drawable/ambit_logo"
+            }
+          }
+        },
+        {
+          "id": 10017,
+          "Comment": "textView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "200",
+              "layout_height": "72",
+              "leftToLeftOf": 101122,
+              "topToBottomOf": 10012,
+              "layout_marginLeft": 20,
+              "text": "Welcome,\nSign in to Continue",
+              "textColor": "#ffffff",
+              "textSize": 22,
+              "layout_marginTop": 0
+            }
+          }
+        },
+        {
+          "id": 50110,
+          "comment": "userName_Panel",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "40",
+              "rightToRightOf": 101122,
+              "topToBottomOf": 10017,
+              "leftToLeftOf": 101122,
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginTop": 100
+            },
+            "componentId": [
+              10018,
+              10013,
+              10016
+            ]
+          }
+        },
+        {
+          "id": 50111,
+          "comment": "password_Panel",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "40",
+              "rightToRightOf": 101122,
+              "topToBottomOf": 50110,
+              "leftToLeftOf": 101122,
+              "layout_marginTop": 20,
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0
+            },
+            "componentId": [
+              10019,
+              10014,
+              10015
+            ]
+          }
+        },
+        {
+          "id": 10018,
+          "Comment": "userImage",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "20",
+              "layout_height": "wrap_content",
+              "leftToLeftOf": 50110,
+              "topToTopOf": 50110,
+              "bottomToBottomOf": 50110,
+              "layout_marginLeft": 20,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 10,
+              "src": "drawable/user"
+            }
+          }
+        },
+        {
+          "id": 10019,
+          "Comment": "passImage",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "20",
+              "layout_height": "wrap_content",
+              "leftToLeftOf": 50111,
+              "topToTopOf": 50111,
+              "bottomToBottomOf": 50111,
+              "layout_marginLeft": 20,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 10,
+              "src": "drawable/security"
+            }
+          }
+        },
+        {
+          "id": 10013,
+          "comment": "username input",
+          "type": 10004,
+          "bindingKey": "username",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "leftToRightOf": 10018,
+              "topToTopOf": 50110,
+              "bottomToBottomOf": 50110,
+              "layout_marginTop": 0,
+              "layout_marginLeft": 10,
+              "layout_marginBottom": 0,
+              "layout_marginRight": 20,
+              "placeHolderText": "Username",
+              "textColor": "#ffffff",
+              "placeHolderTextColor": "#ffffff",
+              "textSize": 16
+            },
+            "validation": [
+              {
+                "type": "required",
+                "errorMessage": "Please enter username to proceed"
+              },
+              {
+                "type": "max",
+                "value": "20",
+                "errorMessage": "Username should not be greater than 10"
+              },
+              {
+                "type": "min",
+                "value": "2",
+                "errorMessage": "Username should not be less than 7"
+              }
+            ]
+          }
+        },
+        {
+          "id": 10014,
+          "comment": "password input",
+          "type": 10004,
+          "bindingKey": "password",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "leftToRightOf": 10019,
+              "topToTopOf": 50111,
+              "bottomToBottomOf": 50111,
+              "placeHolderText": "Password",
+              "textColor": "#ffffff",
+              "placeHolderTextColor": "#ffffff",
+              "textSize": 16,
+              "layout_marginTop": 0,
+              "layout_marginLeft": 10,
+              "layout_marginBottom": 0,
+              "layout_marginRight": 20
+            },
+            "validation": [
+              {
+                "type": "required",
+                "errorMessage": "Please enter password to proceed"
+              },
+              {
+                "type": "max",
+                "value": "20",
+                "errorMessage": "Password should not be > 10"
+              },
+              {
+                "type": "min",
+                "value": "2",
+                "errorMessage": "Password should not be < 7"
+              }
+            ]
+          }
+        },
+        {
+          "id": 10015,
+          "comment": "pass_bottom_line",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "2",
+              "leftToLeftOf": 50111,
+              "rightToRightOf": 50111,
+              "bottomToBottomOf": 50111,
+              "background": "#ffffff",
+              "layout_marginBottom": 0,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20
+            }
+          }
+        },
+        {
+          "id": 10016,
+          "comment": "user_bottom_line",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "2",
+              "leftToLeftOf": 50110,
+              "rightToRightOf": 50110,
+              "bottomToBottomOf": 50110,
+              "layout_marginBottom": 0,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "background": "#ffffff"
+            }
+          }
+        },
+        {
+          "id": 70006,
+          "Comment": "button",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "40",
+              "leftToLeftOf": 101122,
+              "rightToRightOf": 101122,
+              "topToBottomOf": 50111,
+              "layout_marginTop": 30,
+              "layout_marginLeft": 40,
+              "layout_marginRight": 40,
+              "text": "LOGIN",
+              "textColor": "#000000",
+              "textSize": 14,
+              "textAlignment": "center",
+              "background": "#ffffff",
+              "textStyle": "bold",
+              "cornerRadius": 8
+            },
+            "events": [
+              {
+                "type": 1,
+                "Comment": "login to dashboard navigate",
+                "triggerId": 31
+              }
+            ]
+          }
+        },
+        {
+          "id": 50212,
+          "comment": "userLogin_panel",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "60",
+              "layout_height": "60",
+              "layout_marginLeft": 40,
+              "layout_marginBottom": 40,
+              "leftToLeftOf": 101122,
+              "bottomToBottomOf": 101122
+            },
+            "componentId": [
+              10020,
+              10021
+            ]
+          }
+        },
+        {
+          "id": 50213,
+          "comment": "pinLogin_panel",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "60",
+              "layout_height": "60",
+              "layout_marginRight": 40,
+              "layout_marginBottom": 40,
+              "rightToRightOf": 101122,
+              "bottomToBottomOf": 101122
+            },
+            "componentId": [
+              10023,
+              10024
+            ]
+          }
+        },
+        {
+          "id": 10020,
+          "Comment": "userLogin",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "24",
+              "layout_height": "24",
+              "centerX": 50212,
+              "topToTopOf": 50212,
+              "layout_marginTop": 10,
+              "src": "drawable/user"
+            }
+          }
+        },
+        {
+          "id": 10021,
+          "Comment": "userTextView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "leftToLeftOf": 50212,
+              "bottomToBottomOf": 50212,
+              "rightToRightOf": 50212,
+              "textAlignment": "center",
+              "text": "User",
+              "textColor": "#ffffff",
+              "textSize": 14,
+              "textStyle": "bold",
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginBottom": 0
+            }
+          }
+        },
+        {
+          "id": 10022,
+          "Comment": "passShow",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "20",
+              "layout_height": "wrap_content",
+              "rightToRightOf": 50111,
+              "topToTopOf": 50111,
+              "bottomToBottomOf": 50111,
+              "layout_marginRight": 30,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 10,
+              "background": "drawable/security"
+            }
+          }
+        },
+        {
+          "id": 10023,
+          "Comment": "pinLogin",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "24",
+              "layout_height": "24",
+              "centerX": 50213,
+              "topToTopOf": 50213,
+              "layout_marginTop": 10,
+              "src": "drawable/security"
+            }
+          }
+        },
+        {
+          "id": 10024,
+          "Comment": "pinTextView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "leftToLeftOf": 50213,
+              "bottomToBottomOf": 50213,
+              "rightToRightOf": 50213,
+              "textAlignment": "center",
+              "text": "PIN",
+              "textColor": "#ffffff",
+              "textSize": 14,
+              "textStyle": "bold",
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginBottom": 0
+            }
+          }
+        },
+        {
+          "id": 10025,
+          "Comment": "forgotPassTxt",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "250",
+              "layout_height": "20",
+              "centerX": 101122,
+              "topToBottomOf": 70006,
+              "layout_marginTop": 20,
+              "text": "Forgot Password ?",
+              "textStyle": "regular",
+              "textColor": "#ffffff",
+              "textAlignment": "center",
+              "textSize": 14
+            }
+          }
+        },
+        {
+          "id": 10026,
+          "Comment": "forgotUserTxt",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "250",
+              "layout_height": "20",
+              "centerX": 101122,
+              "topToBottomOf": 10025,
+              "layout_marginTop": 10,
+              "textStyle": "regular",
+              "text": "Forgot Username ?",
+              "textColor": "#ffffff",
+              "textAlignment": "center",
+              "textSize": 14
+            }
+          }
+        },
+        {
+          "id": 10027,
+          "comment": "left_side_line",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "60",
+              "layout_height": "1",
+              "leftToLeftOf": 50112,
+              "topToTopOf": 50112,
+              "layout_marginLeft": 20,
+              "layout_marginTop": 10,
+              "background": "#ffffff"
+            }
+          }
+        },
+        {
+          "id": 10028,
+          "comment": "right_side_line",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "60",
+              "layout_height": "1",
+              "rightToRightOf": 50112,
+              "topToTopOf": 50112,
+              "layout_marginRight": 20,
+              "layout_marginTop": 10,
+              "background": "#ffffff"
+            }
+          }
+        },
+        {
+          "id": 50112,
+          "comment": "loginVIA_Panel",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "36",
+              "rightToRightOf": 101122,
+              "leftToLeftOf": 101122,
+              "topToBottomOf": 10026,
+              "layout_marginRight": 0,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 0
+            },
+            "componentId": [
+              10027,
+              10028,
+              10029
+            ]
+          }
+        },
+        {
+          "id": 10029,
+          "Comment": "login VIA User or PIN",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "layout_marginTop": 10,
+              "layout_marginRight": 10,
+              "layout_marginLeft": 10,
+              "leftToRightOf": 10027,
+              "topToTopOf": 50112,
+              "rightToLeftOf": 10028,
+              "bottomToBottomOf": 50112,
+              "text": "OR YOU WANT TO LOGIN VIA",
+              "textColor": "#ffffff",
+              "textStyle": "bold",
+              "textAlignment": "center",
+              "textSize": 12
+            }
+          }
+        },
+        {
+          "id": 110073,
+          "Comment": "constraintLayout",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent",
+              "background": "drawable/bg",
+              "hideNavBar": true
+            },
+            "componentId": [
+              100047
+            ]
+          }
+        },
+        {
+          "id": 100047,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "380",
+              "topToTopOf": 110073,
+              "leftToLeftOf": 110073,
+              "layout_marginLeft": 0,
+              "layout_marginTop": 0,
+              "background": "#ffffff"
+            },
+            "events": [
+              {
+                "type": 0,
+                "Comment": "on load accounts",
+                "triggerId": 33
+              }
+            ],
+            "componentId": [
+              100049,
+              100050,
+              100051,
+              100052
+            ]
+          }
+        },
+        {
+          "id": 100048,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "background": "#ffffff",
+              "clickable": false,
+              "leftToLeftOf": 100049,
+              "rightToRightOf": 100049,
+              "topToTopOf": 100049,
+              "bottomToBottomOf": 100054
+            }
+          }
+        },
+        {
+          "id": 100049,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "30",
+              "text": "Assalam o Alikum!",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 16,
+              "textStyle": "bold",
+              "leftToLeftOf": 100047,
+              "rightToRightOf": 100047,
+              "topToTopOf": 100047,
+              "layout_marginTop": 20,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20
+            }
+          }
+        },
+        {
+          "id": 100050,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "20",
+              "text": "June 12, 2020",
+              "textColor": "#17468B",
+              "textAlignment": "left",
+              "textSize": 14,
+              "leftToLeftOf": 100047,
+              "rightToRightOf": 100047,
+              "topToBottomOf": 100049,
+              "layout_marginTop": 0,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20
+            }
+          }
+        },
+        {
+          "id": 100051,
+          "Comment": "recyclerView",
+          "type": 10008,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "accountFilter",
+          "dependentBindingKey": "filteredAccounts",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "40",
+              "orientation": "horizontal",
+              "layout_marginLeft": 20,
+              "layout_marginRight": 0,
+              "layout_marginTop": 20,
+              "rightToRightOf": 100047,
+              "leftToLeftOf": 100047,
+              "topToBottomOf": 100050,
+              "rowId": "100056"
+            }
+          }
+        },
+        {
+          "id": 100052,
+          "Comment": "recyclerView",
+          "type": 10008,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "filteredAccounts",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "200",
+              "orientation": "horizontal",
+              "paging": false,
+              "layout_marginTop": 20,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "rightToRightOf": 100047,
+              "leftToLeftOf": 100047,
+              "topToBottomOf": 100051,
+              "rowId": "$rowId"
+            }
+          }
+        },
+        {
+          "id": 100053,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "1",
+              "layout_marginTop": 20,
+              "layout_marginLeft": 48,
+              "paddingLeft": 16,
+              "background": "#000000",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "leftToLeftOf": 100047,
+              "rightToLeftOf": 100054,
+              "topToBottomOf": 100052
+            }
+          }
+        },
+        {
+          "id": 100054,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "24",
+              "text": "View All",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "paddingBottom": 30,
+              "textSize": 4,
+              "textStyle": "bold",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "rightToLeftOf": 100055,
+              "leftToRightOf": 100053,
+              "topToBottomOf": 100052
+            }
+          }
+        },
+        {
+          "id": 100055,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "1",
+              "layout_marginTop": 20,
+              "layout_marginRight": 48,
+              "paddingLeft": 0,
+              "paddingRight": 16,
+              "background": "#000000",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "rightToRightOf": 100047,
+              "leftToRightOf": 100054,
+              "topToBottomOf": 100052
+            }
+          }
+        },
+        {
+          "id": 100056,
+          "Comment": "Constraint",
+          "type": 10009,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "80",
+              "layout_height": "40",
+              "layout_marginRight": 40,
+              "background": "#E7EAF1",
+              "cornerRadius": 8
+            },
+            "componentId": [
+              100057
+            ],
+            "events": [
+              {
+                "type": 1,
+                "Comment": "on filter click",
+                "triggerId": 11
+              },
+              {
+                "type": 1,
+                "Comment": "on filter click",
+                "triggerId": 12
+              }
+            ]
+          }
+        },
+        {
+          "id": 100057,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "displayValue",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "text": "ACCOUNT",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "textSize": 12,
+              "textStyle": "bold",
+              "clickable": false,
+              "leftToLeftOf": 100056,
+              "topToTopOf": 100056,
+              "rightToRightOf": 100056,
+              "bottomToBottomOf": 100056,
+              "layout_marginTop": 5,
+              "layout_marginBottom": 5,
+              "layout_marginLeft": 5,
+              "layout_marginRight": 5
+            }
+          }
+        },
+        {
+          "id": 100058,
+          "Comment": "Constraint",
+          "type": 10009,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent"
+            },
+            "componentId": [
+              100059,
+              100060,
+              100061,
+              100062,
+              100063,
+              100064,
+              100065,
+              100066,
+              1000671,
+              1000672,
+              1000673
+            ]
+          }
+        },
+        {
+          "id": 100059,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "clickable": false,
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginTop": 0,
+              "layout_marginBottom": 0,
+              "leftToLeftOf": 100058,
+              "rightToRightOf": 100058,
+              "topToTopOf": 100058,
+              "bottomToBottomOf": 100058,
+              "borderWidth": 1,
+              "borderColor": "#000000"
+            }
+          }
+        },
+        {
+          "id": 100060,
+          "Comment": "ImageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "30",
+              "layout_height": "30",
+              "layout_marginLeft": 10,
+              "layout_marginTop": 8,
+              "clickable": false,
+              "src": "drawable/chart",
+              "tintColor": "#000000",
+              "leftToLeftOf": 100059,
+              "topToTopOf": 100059
+            }
+          }
+        },
+        {
+          "id": 100061,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "$accountCategory",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "20",
+              "text": "Current Account",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "layout_marginTop": 10,
+              "textSize": 14,
+              "clickable": false,
+              "textStyle": "bold",
+              "centerX": 100059
+            }
+          }
+        },
+        {
+          "id": 100062,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "80",
+              "layout_height": "20",
+              "text": "Hide Amount",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "layout_marginRight": 10,
+              "layout_marginTop": 10,
+              "textSize": 10,
+              "clickable": false,
+              "background": "drawable/rounded_blue_bg",
+              "cornerRadius": 8,
+              "borderWidth": 1,
+              "borderColor": "#000000",
+              "rightToRightOf": 100059,
+              "topToTopOf": 100059
+            }
+          }
+        },
+        {
+          "id": 100063,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "$instrumentStatus",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "20",
+              "text": "Active",
+              "textColor": "#FF35DCA4",
+              "textSize": 10,
+              "textAlignment": "center",
+              "textStyle": "bold",
+              "clickable": false,
+              "centerX": 100059,
+              "topToBottomOf": 100061,
+              "layout_marginTop": 0
+            }
+          }
+        },
+        {
+          "id": 100064,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "$currentBalance.localeFormattedAmount",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "30",
+              "text": "PKR 25,200.00",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "textSize": 20,
+              "clickable": false,
+              "textStyle": "bold",
+              "layout_marginTop": 10,
+              "centerX": 100059,
+              "topToBottomOf": 100063
+            }
+          }
+        },
+        {
+          "id": 100065,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "$accountTitle",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "20",
+              "text": "Muhammad Waqas",
+              "textColor": "#FF35DCA4",
+              "textSize": 14,
+              "textAlignment": "center",
+              "clickable": false,
+              "layout_marginTop": 20,
+              "centerX": 100059,
+              "topToBottomOf": 100064
+            }
+          }
+        },
+        {
+          "id": 100066,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "$accountNumber",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "20",
+              "text": "0158 0102 355 932",
+              "textColor": "#462ADA",
+              "textAlignment": "center",
+              "textSize": 14,
+              "clickable": false,
+              "layout_marginTop": 0,
+              "centerX": 100059,
+              "topToBottomOf": 100065
+            }
+          }
+        },
+        {
+          "id": 100067,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "1",
+              "background": "#000000",
+              "clickable": false,
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginTop": 10,
+              "leftToLeftOf": 100058,
+              "rightToRightOf": 100058,
+              "topToBottomOf": 100066
+            }
+          }
+        },
+        {
+          "id": 1000671,
+          "Comment": "Button",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "wrap_content",
+              "background": "#ffffff",
+              "clickable": false,
+              "text": "Transfer",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "textSize": 12,
+              "borderWidth": 1,
+              "borderColor": "#000000",
+              "layout_marginLeft": 0,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 0,
+              "leftToLeftOf": 100059,
+              "topToBottomOf": 100066,
+              "bottomToBottomOf": 100059,
+              "equal_width": 1000672,
+              "rightToLeftOf": 1000672
+            }
+          }
+        },
+        {
+          "id": 1000672,
+          "Comment": "Button",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "wrap_content",
+              "background": "#ffffff",
+              "clickable": false,
+              "layout_marginLeft": 0,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 0,
+              "leftToRightOf": 1000671,
+              "topToBottomOf": 100066,
+              "bottomToBottomOf": 100058,
+              "rightToLeftOf": 1000673,
+              "equal_width": 1000671,
+              "text": "Payment",
+              "textColor": "#000000",
+              "textSize": 12,
+              "borderWidth": 1,
+              "borderColor": "#000000",
+              "textAlignment": "center"
+            }
+          }
+        },
+        {
+          "id": 1000673,
+          "Comment": "Button",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "wrap_content",
+              "background": "#ffffff",
+              "clickable": false,
+              "layout_marginLeft": 0,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 0,
+              "layout_marginRight": 0,
+              "leftToRightOf": 1000672,
+              "topToBottomOf": 100066,
+              "bottomToBottomOf": 100058,
+              "rightToRightOf": 100059,
+              "equal_width": 1000672,
+              "text": "More",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "textSize": 12,
+              "borderWidth": 1,
+              "borderColor": "#000000"
+            }
+          }
+        },
+        {
+          "id": 100068,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "text": "Transfer",
+              "textColor": "#000000",
+              "textSize": 12,
+              "clickable": false,
+              "textStyle": "bold",
+              "textAlignment": "center",
+              "centerX": 1000671,
+              "centerY": 1000671
+            }
+          }
+        },
+        {
+          "id": 100069,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "1",
+              "layout_height": "match_constraint",
+              "background": "#000000",
+              "clickable": false,
+              "bottomToBottomOf": 1000671,
+              "topToTopOf": 1000671,
+              "rightToRightOf": 1000671,
+              "layout_marginTop": 0,
+              "layout_marginBottom": 0,
+              "layout_marginRight": 0
+            }
+          }
+        },
+        {
+          "id": 100070,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "text": "Payment",
+              "textColor": "#000000",
+              "textSize": 12,
+              "clickable": false,
+              "textStyle": "bold",
+              "textAlignment": "center",
+              "centerX": 1000672,
+              "centerY": 1000672
+            }
+          }
+        },
+        {
+          "id": 100071,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "1",
+              "layout_height": "match_constraint",
+              "background": "#000000",
+              "clickable": false,
+              "bottomToBottomOf": 1000672,
+              "topToTopOf": 1000672,
+              "rightToRightOf": 1000672,
+              "layout_marginTop": 0,
+              "layout_marginBottom": 0,
+              "layout_marginRight": 0
+            }
+          }
+        },
+        {
+          "id": 100072,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "text": "More",
+              "textColor": "#000000",
+              "textSize": 12,
+              "clickable": false,
+              "textStyle": "bold",
+              "textAlignment": "center",
+              "centerX": 1000673,
+              "centerY": 1000673
+            }
+          }
+        },
+        {
+          "id": 110047,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_constraint",
+              "topToBottomOf": 120047,
+              "leftToLeftOf": 110073,
+              "rightToRightOf": 110073,
+              "background": "#aaaaaa"
+            },
+            "componentId": [
+              110049,
+              110050,
+              110052
+            ]
+          }
+        },
+        {
+          "id": 110048,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "background": "#ffffff",
+              "clickable": false,
+              "leftToLeftOf": 110049,
+              "rightToRightOf": 110049,
+              "topToTopOf": 110049,
+              "bottomToBottomOf": 110054
+            }
+          }
+        },
+        {
+          "id": 110049,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "40",
+              "text": "Payments",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "layout_marginTop": 30,
+              "paddingTop": 40,
+              "paddingLeft": 40,
+              "paddingRight": 20,
+              "textSize": 6,
+              "textStyle": "bold",
+              "clickable": false,
+              "leftToLeftOf": 110047,
+              "rightToRightOf": 110047,
+              "topToTopOf": 110047
+            }
+          }
+        },
+        {
+          "id": 110050,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "28",
+              "text": "Select bill payee and pay bill instantly",
+              "textColor": "#17468B",
+              "textAlignment": "left",
+              "layout_marginTop": 10,
+              "paddingLeft": 40,
+              "paddingRight": 16,
+              "textSize": 4,
+              "clickable": false,
+              "leftToLeftOf": 110047,
+              "rightToRightOf": 110047,
+              "topToBottomOf": 110049
+            }
+          }
+        },
+        {
+          "id": 110051,
+          "Comment": "recyclerView",
+          "type": 10008,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "accountList",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "32",
+              "orientation": "horizontal",
+              "layout_marginLeft": 40,
+              "layout_marginRight": 40,
+              "layout_marginTop": 30,
+              "rightToRightOf": 110047,
+              "leftToLeftOf": 110047,
+              "topToBottomOf": 110050,
+              "rowId": "110056"
+            }
+          }
+        },
+        {
+          "id": 110052,
+          "Comment": "recyclerView",
+          "type": 10008,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "accountList",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "250",
+              "orientation": "horizontal",
+              "layout_marginTop": 0,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "rightToRightOf": 110047,
+              "leftToLeftOf": 110047,
+              "topToBottomOf": 110050,
+              "rowId": "110058"
+            }
+          }
+        },
+        {
+          "id": 110053,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "1",
+              "layout_marginTop": 8,
+              "layout_marginLeft": 48,
+              "paddingLeft": 16,
+              "background": "#000000",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "leftToLeftOf": 110047,
+              "rightToLeftOf": 110054,
+              "bottomToBottomOf": 110048,
+              "topToBottomOf": 110052
+            }
+          }
+        },
+        {
+          "id": 110054,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "28",
+              "text": "View All",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "paddingBottom": 30,
+              "layout_marginTop": 16,
+              "layout_marginLeft": 16,
+              "layout_marginRight": 48,
+              "textSize": 4,
+              "textStyle": "bold",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "rightToLeftOf": 110055,
+              "bottomToBottomOf": 110048,
+              "leftToRightOf": 110053,
+              "topToBottomOf": 110052
+            }
+          }
+        },
+        {
+          "id": 110055,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "1",
+              "layout_marginTop": 8,
+              "layout_marginRight": 48,
+              "paddingLeft": 0,
+              "paddingRight": 16,
+              "background": "#000000",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "rightToRightOf": 110047,
+              "leftToRightOf": 110054,
+              "bottomToBottomOf": 110048,
+              "topToBottomOf": 110052
+            }
+          }
+        },
+        {
+          "id": 110056,
+          "Comment": "Constraint",
+          "type": 10009,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "72",
+              "layout_height": "28",
+              "layout_marginRight": 40,
+              "background": "drawable/unselected_state_horizontal_scroll_bg"
+            },
+            "componentId": [
+              110057
+            ]
+          }
+        },
+        {
+          "id": 110057,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "72",
+              "layout_height": "28",
+              "text": "ELECTRICITY",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "paddingLeft": 30,
+              "paddingRight": 30,
+              "paddingTop": 16,
+              "paddingBottom": 16,
+              "textSize": 3,
+              "textStyle": "bold",
+              "clickable": false,
+              "leftToLeftOf": 110056,
+              "topToTopOf": 110056
+            }
+          }
+        },
+        {
+          "id": 110058,
+          "Comment": "Constraint",
+          "type": 10009,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "160",
+              "layout_height": "200"
+            },
+            "componentId": [
+              110059,
+              110060
+            ]
+          }
+        },
+        {
+          "id": 110059,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "background": "#fffff0",
+              "clickable": false,
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginTop": 0,
+              "layout_marginBottom": 0,
+              "leftToLeftOf": 110058,
+              "rightToRightOf": 110058,
+              "topToTopOf": 110058,
+              "bottomToBottomOf": 110058
+            }
+          }
+        },
+        {
+          "id": 110060,
+          "Comment": "ImageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "36",
+              "layout_height": "36",
+              "layout_marginTop": 20,
+              "layout_marginLeft": 10,
+              "clickable": false,
+              "src": "drawable/ic_profile_vector",
+              "tintColor": "#AAAAAA",
+              "leftToLeftOf": 110058,
+              "rightToRightOf": 110058,
+              "topToTopOf": 110058
+            }
+          }
+        },
+        {
+          "id": 110061,
+          "Comment": "ImageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "30",
+              "layout_height": "30",
+              "layout_marginLeft": 20,
+              "layout_marginTop": 32,
+              "paddingTop": 20,
+              "paddingBottom": 20,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "clickable": false,
+              "src": "drawable/star_icon",
+              "tintColor": "#000000",
+              "leftToLeftOf": 110058,
+              "topToTopOf": 110058
+            }
+          }
+        },
+        {
+          "id": 110062,
+          "Comment": "ImageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "30",
+              "layout_height": "30",
+              "layout_marginRight": 40,
+              "layout_marginTop": 32,
+              "paddingTop": 20,
+              "paddingBottom": 20,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "clickable": false,
+              "src": "drawable/edit_icon",
+              "tintColor": "#000000",
+              "rightToRightOf": 110058,
+              "topToTopOf": 110058
+            }
+          }
+        },
+        {
+          "id": 110064,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "72",
+              "layout_height": "20",
+              "text": "13434",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "textSize": 4,
+              "clickable": false,
+              "textStyle": "bold",
+              "layout_marginTop": 48,
+              "layout_marginRight": 30,
+              "leftToLeftOf": 110058,
+              "rightToRightOf": 110058,
+              "topToBottomOf": 110060
+            }
+          }
+        },
+        {
+          "id": 110065,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "72",
+              "layout_height": "20",
+              "text": "014141456",
+              "textAlignment": "center",
+              "textColor": "#AAAAAA",
+              "textSize": 4,
+              "clickable": false,
+              "layout_marginTop": 20,
+              "layout_marginRight": 30,
+              "leftToLeftOf": 110058,
+              "rightToRightOf": 110058,
+              "topToBottomOf": 110064
+            }
+          }
+        },
+        {
+          "id": 110066,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "72",
+              "layout_height": "20",
+              "text": "835.00",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "textSize": 5,
+              "clickable": false,
+              "textStyle": "bold",
+              "layout_marginTop": 20,
+              "layout_marginRight": 30,
+              "leftToLeftOf": 110058,
+              "rightToRightOf": 110058,
+              "topToBottomOf": 110065
+            }
+          }
+        },
+        {
+          "id": 110067,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "1",
+              "background": "#AAAAAA",
+              "clickable": false,
+              "layout_marginLeft": 8,
+              "layout_marginRight": 40,
+              "layout_marginTop": 40,
+              "leftToLeftOf": 110058,
+              "rightToRightOf": 110058,
+              "topToBottomOf": 110066
+            }
+          }
+        },
+        {
+          "id": 110068,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "64",
+              "layout_height": "36",
+              "text": "Pay Now",
+              "textColor": "#000000",
+              "textSize": 4,
+              "clickable": false,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "paddingTop": 30,
+              "layout_marginRight": 30,
+              "textStyle": "bold",
+              "paddingBottom": 30,
+              "textAlignment": "center",
+              "leftToLeftOf": 110058,
+              "rightToRightOf": 110058,
+              "topToBottomOf": 110067
+            }
+          }
+        },
+        {
+          "id": 120047,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_constraint",
+              "topToBottomOf": 100047,
+              "leftToLeftOf": 110073,
+              "rightToRightOf": 110073,
+              "background": "#aaaaaa"
+            },
+            "componentId": [
+              120048,
+              120049,
+              120050,
+              120051,
+              120052,
+              120053,
+              120054,
+              120055
+            ]
+          }
+        },
+        {
+          "id": 120048,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "background": "#ffffff",
+              "clickable": false,
+              "leftToLeftOf": 120049,
+              "rightToRightOf": 120049,
+              "topToTopOf": 120049,
+              "bottomToBottomOf": 120054
+            }
+          }
+        },
+        {
+          "id": 120049,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "36",
+              "text": "Transfer",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "layout_marginTop": 30,
+              "paddingTop": 40,
+              "paddingLeft": 40,
+              "paddingRight": 20,
+              "textSize": 6,
+              "textStyle": "bold",
+              "clickable": false,
+              "leftToLeftOf": 120047,
+              "rightToRightOf": 120047,
+              "topToTopOf": 120047
+            }
+          }
+        },
+        {
+          "id": 120050,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "36",
+              "text": "Select beneficiary and transfer easily",
+              "textColor": "#17468B",
+              "textAlignment": "left",
+              "layout_marginTop": 10,
+              "paddingLeft": 40,
+              "paddingRight": 16,
+              "textSize": 4,
+              "clickable": false,
+              "leftToLeftOf": 120047,
+              "rightToRightOf": 120047,
+              "topToBottomOf": 120049
+            }
+          }
+        },
+        {
+          "id": 120051,
+          "Comment": "recyclerView",
+          "type": 10008,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "accountList",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "28",
+              "orientation": "horizontal",
+              "layout_marginLeft": 40,
+              "layout_marginRight": 40,
+              "layout_marginTop": 30,
+              "rightToRightOf": 120047,
+              "leftToLeftOf": 120047,
+              "topToBottomOf": 120050,
+              "rowId": "120056"
+            }
+          }
+        },
+        {
+          "id": 120052,
+          "Comment": "recyclerView",
+          "type": 10008,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "accountList",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "200",
+              "orientation": "horizontal",
+              "paddingBottom": 0,
+              "layout_marginTop": 30,
+              "layout_marginLeft": 40,
+              "layout_marginRight": 40,
+              "rightToRightOf": 120047,
+              "leftToLeftOf": 120047,
+              "topToBottomOf": 120051,
+              "rowId": "120058"
+            }
+          }
+        },
+        {
+          "id": 120053,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "1",
+              "layout_marginTop": 16,
+              "layout_marginLeft": 48,
+              "layout_marginBottom": 16,
+              "paddingLeft": 16,
+              "background": "#000000",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "leftToLeftOf": 120047,
+              "rightToLeftOf": 120054,
+              "bottomToBottomOf": 120047,
+              "topToBottomOf": 120052
+            }
+          }
+        },
+        {
+          "id": 120054,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "28",
+              "text": "View All",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "paddingBottom": 30,
+              "textSize": 4,
+              "layout_marginTop": 20,
+              "layout_marginBottom": 16,
+              "textStyle": "bold",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "rightToLeftOf": 120055,
+              "leftToRightOf": 120053,
+              "bottomToBottomOf": 120047,
+              "topToBottomOf": 120052
+            }
+          }
+        },
+        {
+          "id": 120055,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "1",
+              "layout_marginTop": 16,
+              "layout_marginBottom": 16,
+              "layout_marginRight": 48,
+              "paddingLeft": 0,
+              "paddingRight": 16,
+              "background": "#000000",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "rightToRightOf": 120047,
+              "leftToRightOf": 120054,
+              "bottomToBottomOf": 120047,
+              "topToBottomOf": 120052
+            }
+          }
+        },
+        {
+          "id": 120056,
+          "Comment": "Constraint",
+          "type": 10009,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "76",
+              "layout_height": "28",
+              "layout_marginRight": 40,
+              "background": "drawable/unselected_state_horizontal_scroll_bg"
+            },
+            "componentId": [
+              120057
+            ]
+          }
+        },
+        {
+          "id": 120057,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "76",
+              "layout_height": "28",
+              "text": "BENEFICIARY",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "paddingLeft": 30,
+              "paddingRight": 30,
+              "paddingTop": 16,
+              "paddingBottom": 16,
+              "textSize": 3,
+              "textStyle": "bold",
+              "clickable": false,
+              "leftToLeftOf": 120056,
+              "topToTopOf": 120056
+            }
+          }
+        },
+        {
+          "id": 120058,
+          "Comment": "Constraint",
+          "type": 10009,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "160",
+              "layout_height": "200"
+            },
+            "componentId": [
+              120059,
+              120060,
+              120064,
+              120065,
+              120067,
+              120068
+            ]
+          }
+        },
+        {
+          "id": 120059,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "background": "drawable/rounded_white_bg",
+              "clickable": false,
+              "layout_marginLeft": 4,
+              "layout_marginRight": 40,
+              "layout_marginTop": 20,
+              "layout_marginBottom": 0,
+              "leftToLeftOf": 120058,
+              "rightToRightOf": 120058,
+              "topToTopOf": 120058,
+              "bottomToBottomOf": 120068
+            }
+          }
+        },
+        {
+          "id": 120060,
+          "Comment": "ImageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "36",
+              "layout_height": "36",
+              "layout_marginTop": 48,
+              "layout_marginLeft": 10,
+              "layout_marginRight": 40,
+              "clickable": false,
+              "src": "drawable/ic_profile_vector",
+              "tintColor": "#AAAAAA",
+              "leftToLeftOf": 120058,
+              "rightToRightOf": 120058,
+              "topToTopOf": 120058
+            }
+          }
+        },
+        {
+          "id": 120064,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "120",
+              "layout_height": "28",
+              "text": "New Account",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "textSize": 4,
+              "clickable": false,
+              "textStyle": "bold",
+              "layout_marginTop": 80,
+              "layout_marginRight": 30,
+              "leftToLeftOf": 120058,
+              "rightToRightOf": 120058,
+              "topToBottomOf": 120060
+            }
+          }
+        },
+        {
+          "id": 120065,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "120",
+              "layout_height": "28",
+              "text": "09158256895",
+              "textAlignment": "center",
+              "textColor": "#AAAAAA",
+              "textSize": 4,
+              "clickable": false,
+              "layout_marginTop": 20,
+              "layout_marginRight": 30,
+              "leftToLeftOf": 120058,
+              "rightToRightOf": 120058,
+              "topToBottomOf": 120064
+            }
+          }
+        },
+        {
+          "id": 120067,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "1",
+              "background": "#AAAAAA",
+              "clickable": false,
+              "layout_marginLeft": 8,
+              "layout_marginRight": 40,
+              "layout_marginTop": 40,
+              "leftToLeftOf": 120058,
+              "rightToRightOf": 120058,
+              "topToBottomOf": 120065
+            }
+          }
+        },
+        {
+          "id": 120068,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "72",
+              "layout_height": "32",
+              "text": "Transfer Now",
+              "textColor": "#000000",
+              "textSize": 4,
+              "clickable": false,
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 20,
+              "layout_marginRight": 30,
+              "textStyle": "bold",
+              "paddingBottom": 5,
+              "textAlignment": "center",
+              "leftToLeftOf": 120058,
+              "rightToRightOf": 120058,
+              "topToBottomOf": 120067
+            }
+          }
+        },
+        {
+          "id": 130047,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_constraint",
+              "topToBottomOf": 110047,
+              "leftToLeftOf": 110073,
+              "rightToRightOf": 110073,
+              "background": "#aaaaaa"
+            },
+            "componentId": [
+              130048,
+              130049,
+              130050,
+              130051,
+              130052,
+              130053,
+              130054,
+              130055
+            ]
+          }
+        },
+        {
+          "id": 130048,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "background": "#ffffff",
+              "clickable": false,
+              "leftToLeftOf": 130049,
+              "rightToRightOf": 130049,
+              "topToTopOf": 130049,
+              "bottomToBottomOf": 130054
+            }
+          }
+        },
+        {
+          "id": 130049,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "40",
+              "text": "Cards",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "layout_marginTop": 30,
+              "paddingTop": 40,
+              "paddingLeft": 40,
+              "paddingRight": 20,
+              "textSize": 6,
+              "textStyle": "bold",
+              "clickable": false,
+              "leftToLeftOf": 130047,
+              "rightToRightOf": 130047,
+              "topToTopOf": 130047
+            }
+          }
+        },
+        {
+          "id": 130050,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "32",
+              "text": "View all cards and set preferences",
+              "textColor": "#17468B",
+              "textAlignment": "left",
+              "layout_marginTop": 10,
+              "paddingLeft": 40,
+              "paddingRight": 16,
+              "textSize": 4,
+              "clickable": false,
+              "leftToLeftOf": 130047,
+              "rightToRightOf": 130047,
+              "topToBottomOf": 130049
+            }
+          }
+        },
+        {
+          "id": 130051,
+          "Comment": "recyclerView",
+          "type": 10008,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "accountList",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "32",
+              "orientation": "horizontal",
+              "layout_marginLeft": 40,
+              "layout_marginRight": 40,
+              "layout_marginTop": 30,
+              "rightToRightOf": 130047,
+              "leftToLeftOf": 130047,
+              "topToBottomOf": 130050,
+              "rowId": "130056"
+            }
+          }
+        },
+        {
+          "id": 130052,
+          "Comment": "recyclerView",
+          "type": 10008,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "accountList",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "260",
+              "orientation": "horizontal",
+              "paging": true,
+              "paddingBottom": 32,
+              "layout_marginTop": 30,
+              "layout_marginLeft": 40,
+              "layout_marginRight": 40,
+              "rightToRightOf": 130047,
+              "leftToLeftOf": 130047,
+              "topToBottomOf": 130051,
+              "rowId": "130058"
+            }
+          }
+        },
+        {
+          "id": 130053,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "1",
+              "layout_marginTop": 24,
+              "layout_marginLeft": 48,
+              "paddingLeft": 16,
+              "background": "#000000",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "leftToLeftOf": 130047,
+              "rightToLeftOf": 130054,
+              "topToBottomOf": 130052
+            }
+          }
+        },
+        {
+          "id": 130054,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "24",
+              "text": "View All",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "paddingBottom": 30,
+              "textSize": 4,
+              "textStyle": "bold",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "rightToLeftOf": 130055,
+              "leftToRightOf": 130053,
+              "topToBottomOf": 130052
+            }
+          }
+        },
+        {
+          "id": 130055,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "1",
+              "layout_marginTop": 24,
+              "layout_marginRight": 48,
+              "paddingLeft": 0,
+              "paddingRight": 16,
+              "background": "#000000",
+              "clickable": false,
+              "layout_constraintHorizontal_weight": 1,
+              "rightToRightOf": 130047,
+              "leftToRightOf": 130054,
+              "topToBottomOf": 130052
+            }
+          }
+        },
+        {
+          "id": 130056,
+          "Comment": "Constraint",
+          "type": 10009,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "52",
+              "layout_height": "24",
+              "layout_marginRight": 40,
+              "background": "drawable/unselected_state_horizontal_scroll_bg"
+            },
+            "componentId": [
+              130057
+            ]
+          }
+        },
+        {
+          "id": 130057,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "48",
+              "layout_height": "24",
+              "text": "DEBIT",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "paddingLeft": 30,
+              "paddingRight": 30,
+              "paddingTop": 16,
+              "paddingBottom": 16,
+              "textSize": 3,
+              "textStyle": "bold",
+              "clickable": false,
+              "leftToLeftOf": 130056,
+              "topToTopOf": 130056
+            }
+          }
+        },
+        {
+          "id": 130058,
+          "Comment": "Constraint",
+          "type": 10009,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "200"
+            },
+            "componentId": [
+              130059,
+              130060,
+              130061,
+              130065
+            ]
+          }
+        },
+        {
+          "id": 130059,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "background": "drawable/credit_card_bg",
+              "clickable": false,
+              "layout_marginLeft": 4,
+              "layout_marginRight": 4,
+              "layout_marginTop": 20,
+              "layout_marginBottom": 0,
+              "leftToLeftOf": 130058,
+              "rightToRightOf": 130058,
+              "topToTopOf": 130058,
+              "bottomToBottomOf": 130058
+            }
+          }
+        },
+        {
+          "id": 130060,
+          "Comment": "ImageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "44",
+              "layout_height": "44",
+              "layout_marginTop": 20,
+              "layout_marginLeft": 48,
+              "clickable": false,
+              "src": "drawable/ambit_card_logo",
+              "tintColor": "#AAAAAA",
+              "leftToLeftOf": 130058,
+              "topToTopOf": 130058
+            }
+          }
+        },
+        {
+          "id": 130061,
+          "Comment": "ImageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "40",
+              "layout_height": "40",
+              "layout_marginBottom": 20,
+              "layout_marginRight": 48,
+              "clickable": false,
+              "src": "drawable/visa_logo",
+              "tintColor": "#AAAAAA",
+              "rightToRightOf": 130058,
+              "bottomToBottomOf": 130058
+            }
+          }
+        },
+        {
+          "id": 130065,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "40",
+              "text": "0915     8256     8955     2558",
+              "textColor": "#99AAAAAA",
+              "textSize": 5,
+              "clickable": false,
+              "textAlignment": "center",
+              "textScaleX": "1.5",
+              "rightToRightOf": 130058,
+              "leftToLeftOf": 130058,
+              "topToTopOf": 130058,
+              "bottomToBottomOf": 130058
+            }
+          }
+        },
+        {
+          "id": 900058,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent"
+            },
+            "componentId": [
+              900059,
+              900061,
+              900062,
+              900063,
+              900064,
+              900065,
+              900067,
+              900068,
+              900069,
+              900070,
+              900071,
+              900072,
+              900073
+            ]
+          }
+        },
+        {
+          "id": 900059,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "200",
+              "background": "drawable/rounded_white_bg",
+              "clickable": false,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "layout_marginTop": 20,
+              "leftToLeftOf": 900058,
+              "rightToRightOf": 900058,
+              "topToTopOf": 900058
+            }
+          }
+        },
+        {
+          "id": 900061,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "32",
+              "text": "LD11230123780",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "layout_marginTop": 30,
+              "textSize": 6,
+              "clickable": false,
+              "textStyle": "bold",
+              "tag": "accountCategory",
+              "leftToLeftOf": 900058,
+              "rightToRightOf": 900058,
+              "topToTopOf": 900058
+            }
+          }
+        },
+        {
+          "id": 900062,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "90",
+              "layout_height": "24",
+              "text": "Hide Amount",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "layout_marginRight": 48,
+              "layout_marginTop": 48,
+              "paddingTop": 8,
+              "paddingBottom": 8,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "textStyle": "bold",
+              "textSize": 4,
+              "clickable": false,
+              "background": "drawable/rounded_blue_bg",
+              "rightToRightOf": 900058,
+              "topToTopOf": 900058
+            }
+          }
+        },
+        {
+          "id": 900063,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "90",
+              "layout_height": "24",
+              "text": "LOAN",
+              "textColor": "#FF35DCA4",
+              "textAlignment": "center",
+              "textSize": 5,
+              "textStyle": "bold",
+              "clickable": false,
+              "tag": "instrumentStatus",
+              "leftToLeftOf": 900061,
+              "rightToRightOf": 900061,
+              "topToBottomOf": 900061
+            }
+          }
+        },
+        {
+          "id": 900064,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "PKR 0.00",
+              "textColor": "#000000",
+              "textSize": 6,
+              "textAlignment": "center",
+              "clickable": false,
+              "textStyle": "bold",
+              "layout_marginTop": 10,
+              "leftToLeftOf": 900061,
+              "rightToRightOf": 900061,
+              "topToBottomOf": 900063
+            }
+          }
+        },
+        {
+          "id": 900065,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "20",
+              "text": "Principle Amount",
+              "textAlignment": "center",
+              "textColor": "#462ADA",
+              "textSize": 6,
+              "clickable": false,
+              "tag": "accountTitle",
+              "layout_marginTop": 10,
+              "leftToLeftOf": 900061,
+              "rightToRightOf": 900061,
+              "topToBottomOf": 900064
+            }
+          }
+        },
+        {
+          "id": 900067,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "80",
+              "background": null,
+              "clickable": false,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "layout_marginBottom": 28,
+              "paddingBottom": 16,
+              "leftToLeftOf": 900059,
+              "rightToRightOf": 900059,
+              "bottomToBottomOf": 900059
+            }
+          },
+          "components": [
+            900068,
+            900069,
+            900070,
+            900071,
+            900072,
+            900073,
+            900074
+          ]
+        },
+        {
+          "id": 900068,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "PKR 12,200.00",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "textSize": 6,
+              "clickable": false,
+              "textStyle": "bold",
+              "layout_marginLeft": 52,
+              "layout_marginTop": 30,
+              "paddingTop": 8,
+              "paddingBottom": 8,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "leftToLeftOf": 900067,
+              "topToTopOf": 900067,
+              "rightToLeftOf": 900071,
+              "bottomToTopOf": 900069
+            }
+          }
+        },
+        {
+          "id": 900069,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "Next Payment",
+              "textColor": "#462ADA",
+              "textSize": 6,
+              "clickable": false,
+              "tag": "accountTitle",
+              "gravity": "gravityCenter",
+              "textAlignment": "center",
+              "layout_marginLeft": 60,
+              "layout_marginTop": 10,
+              "paddingTop": 4,
+              "paddingBottom": 4,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "leftToLeftOf": 900067,
+              "topToBottomOf": 900068,
+              "bottomToTopOf": 900070,
+              "rightToLeftOf": 900071
+            }
+          }
+        },
+        {
+          "id": 900070,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "120",
+              "layout_height": "24",
+              "text": "2021-05-24",
+              "textColor": "#d42b0d",
+              "textSize": 4,
+              "clickable": false,
+              "tag": "accountTitle",
+              "textAlignment": "center",
+              "layout_marginLeft": 52,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 14,
+              "paddingTop": 8,
+              "paddingBottom": 8,
+              "paddingLeft": 10,
+              "paddingRight": 20,
+              "leftToLeftOf": 900067,
+              "topToBottomOf": 900069,
+              "bottomToBottomOf": 900067,
+              "rightToLeftOf": 900071
+            }
+          }
+        },
+        {
+          "id": 900071,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "1",
+              "layout_height": "44",
+              "background": "#462ADA",
+              "clickable": false,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "layout_marginBottom": 20,
+              "leftToLeftOf": 900067,
+              "rightToRightOf": 900067,
+              "topToTopOf": 900067,
+              "bottomToBottomOf": 900067
+            }
+          }
+        },
+        {
+          "id": 900072,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "PKR 0.00",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "textSize": 6,
+              "clickable": false,
+              "textStyle": "bold",
+              "layout_marginLeft": 36,
+              "layout_marginTop": 30,
+              "paddingTop": 8,
+              "paddingBottom": 8,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "leftToRightOf": 900071,
+              "rightToRightOf": 900067,
+              "topToTopOf": 900067
+            }
+          }
+        },
+        {
+          "id": 900073,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "200",
+              "layout_height": "32",
+              "text": "Outstanding Payment",
+              "textColor": "#462ADA",
+              "textSize": 5,
+              "clickable": false,
+              "tag": "accountTitle",
+              "gravity": "gravityCenter",
+              "textAlignment": "center",
+              "layout_marginRight": 30,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 30,
+              "paddingTop": 8,
+              "paddingBottom": 8,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "rightToRightOf": 900067,
+              "leftToRightOf": 900071,
+              "topToBottomOf": 900072
+            }
+          }
+        },
+        {
+          "id": 800058,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "200"
+            },
+            "componentId": [
+              800059,
+              800061,
+              800062,
+              800063,
+              800064,
+              800065,
+              800067,
+              800068,
+              800069,
+              800071,
+              800072,
+              800073,
+              800074
+            ]
+          }
+        },
+        {
+          "id": 800059,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "200",
+              "background": "drawable/rounded_white_bg",
+              "clickable": false,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "layout_marginTop": 20,
+              "leftToLeftOf": 800058,
+              "rightToRightOf": 800058,
+              "topToTopOf": 800058
+            }
+          }
+        },
+        {
+          "id": 800061,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "MM11230123780",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "layout_marginTop": 30,
+              "textSize": 6,
+              "clickable": false,
+              "textStyle": "bold",
+              "tag": "accountCategory",
+              "leftToLeftOf": 800058,
+              "rightToRightOf": 800058,
+              "topToTopOf": 800058
+            }
+          }
+        },
+        {
+          "id": 800062,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "90",
+              "layout_height": "24",
+              "text": "Hide Amount",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "layout_marginRight": 48,
+              "layout_marginTop": 48,
+              "paddingTop": 8,
+              "paddingBottom": 8,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "textStyle": "bold",
+              "textSize": 4,
+              "clickable": false,
+              "background": "drawable/rounded_blue_bg",
+              "rightToRightOf": 800058,
+              "topToTopOf": 800058
+            }
+          }
+        },
+        {
+          "id": 800063,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "ACTIVE",
+              "textColor": "#FF35DCA4",
+              "textSize": 5,
+              "textStyle": "bold",
+              "textAlignment": "center",
+              "clickable": false,
+              "tag": "instrumentStatus",
+              "leftToLeftOf": 800061,
+              "rightToRightOf": 800061,
+              "topToBottomOf": 800061
+            }
+          }
+        },
+        {
+          "id": 800064,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "PKR 1,00,000.00",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "textSize": 6,
+              "clickable": false,
+              "textStyle": "bold",
+              "layout_marginTop": 10,
+              "leftToLeftOf": 800061,
+              "rightToRightOf": 800061,
+              "topToBottomOf": 800063
+            }
+          }
+        },
+        {
+          "id": 800065,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "Principle Amount",
+              "textAlignment": "center",
+              "textColor": "#462ADA",
+              "textSize": 6,
+              "clickable": false,
+              "tag": "accountTitle",
+              "layout_marginTop": 10,
+              "leftToLeftOf": 800061,
+              "rightToRightOf": 800061,
+              "topToBottomOf": 800064
+            }
+          }
+        },
+        {
+          "id": 800067,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "64",
+              "background": null,
+              "clickable": false,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "layout_marginBottom": 28,
+              "paddingBottom": 16,
+              "leftToLeftOf": 800059,
+              "rightToRightOf": 800059,
+              "bottomToBottomOf": 800059,
+              "topToBottomOf": 800065
+            }
+          },
+          "components": [
+            800068,
+            800069,
+            800070,
+            800071,
+            800072,
+            800073,
+            800074
+          ]
+        },
+        {
+          "id": 800068,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "12",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "textSize": 6,
+              "clickable": false,
+              "tag": "accountTitle",
+              "layout_marginTop": 10,
+              "leftToLeftOf": 800067,
+              "topToTopOf": 800067,
+              "rightToLeftOf": 800071,
+              "bottomToTopOf": 800069
+            }
+          }
+        },
+        {
+          "id": 800069,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "textAlignment": "center",
+              "text": "Tenure",
+              "textColor": "#462ADA",
+              "textSize": 6,
+              "clickable": false,
+              "tag": "accountTitle",
+              "layout_marginTop": 10,
+              "leftToLeftOf": 800067,
+              "topToBottomOf": 800068,
+              "bottomToTopOf": 800070,
+              "rightToLeftOf": 800071
+            }
+          }
+        },
+        {
+          "id": 800071,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "1",
+              "layout_height": "32",
+              "background": "#462ADA",
+              "clickable": false,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "layout_marginBottom": 20,
+              "layout_marginTop": 20,
+              "leftToLeftOf": 800067,
+              "rightToRightOf": 800067,
+              "topToTopOf": 800067,
+              "bottomToBottomOf": 800067
+            }
+          }
+        },
+        {
+          "id": 800072,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "08-DEC-2021",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "textSize": 6,
+              "clickable": false,
+              "tag": "accountTitle",
+              "layout_marginTop": 10,
+              "leftToRightOf": 800071,
+              "rightToRightOf": 800067,
+              "topToTopOf": 800067
+            }
+          }
+        },
+        {
+          "id": 800073,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "Tenure",
+              "textAlignment": "center",
+              "textColor": "#462ADA",
+              "textSize": 6,
+              "clickable": false,
+              "tag": "accountTitle",
+              "layout_marginTop": 10,
+              "rightToRightOf": 800067,
+              "leftToRightOf": 800071,
+              "topToBottomOf": 800072
+            }
+          }
+        },
+        {
+          "id": 800074,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "260",
+              "layout_height": "24",
+              "text": "Reference Amount: MM11230123782",
+              "textColor": "#000000",
+              "textSize": 5,
+              "textAlignment": "center",
+              "clickable": false,
+              "paddingBottom": 10,
+              "tag": "accountTitle",
+              "layout_marginTop": 10,
+              "layout_marginBottom": 10,
+              "rightToRightOf": 800059,
+              "leftToLeftOf": 800059,
+              "topToBottomOf": 800067,
+              "bottomToBottomOf": 800059
+            }
+          }
+        },
+        {
+          "id": 100081,
+          "Comment": "relative",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "background": "drawable/bg",
+              "layout_height": "match_parent",
+              "layout_width": "match_parent"
+            },
+            "componentId": [
+              100082
+            ],
+            "Comment": "recycler component"
+          }
+        },
+        {
+          "id": 100082,
+          "Comment": "faq tableView",
+          "type": 100010,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "faq",
+          "bindingKeyTrigger": 3,
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "equal_height": 100081,
+              "equal_width": 100081,
+              "parentId": "100083",
+              "childId": "100084",
+              "groupTitleKey": "groupName",
+              "groupItemsKey": "groupFAQ"
+            }
+          }
+        },
+        {
+          "id": 100083,
+          "Comment": "uilabel list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "groupName",
+          "attributes": {
+            "layoutProperties": {
+              "tag": "groupName",
+              "text": "Header item",
+              "layout_height": "40",
+              "textColor": "#042E4C",
+              "textSize": 20,
+              "background": "#ffffff",
+              "layout_marginTop": 0,
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginBottom": 0,
+              "paddingTop": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "textStyle": "bold"
+            },
+            "events": [
+              {
+                "type": 1,
+                "Comment": "on section header click",
+                "triggerId": 15
+              }
+            ]
+          }
+        },
+        {
+          "id": 100084,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_marginTop": 0,
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginBottom": 0,
+              "layout_width": "match_parent"
+            },
+            "componentId": [
+              100085,
+              100086
+            ]
+          }
+        },
+        {
+          "id": 100085,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "question",
+          "attributes": {
+            "layoutProperties": {
+              "text": "child item",
+              "textColor": "#000000",
+              "layout_marginTop": 0,
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_height": "30",
+              "layout_width": "match_parent",
+              "textSize": 18,
+              "tag": "question",
+              "background": "#ffffff",
+              "paddingTop": 5,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingBottom": 0,
+              "topToTopOf": 100084,
+              "leftToLeftOf": 100084,
+              "rightToRightOf": 100084
+            }
+          }
+        },
+        {
+          "id": 100086,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "answer",
+          "attributes": {
+            "layoutProperties": {
+              "paddingTop": 5,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingBottom": 5,
+              "text": "child item",
+              "textColor": "#042E4C",
+              "layout_marginTop": 0,
+              "layout_width": "match_parent",
+              "layout_marginLeft": 0,
+              "layout_marginRight": 0,
+              "layout_marginBottom": 0,
+              "topToBottomOf": 100085,
+              "leftToLeftOf": 100084,
+              "rightToRightOf": 100084,
+              "bottomToBottomOf": 100084,
+              "textSize": 14,
+              "tag": "answer",
+              "background": "#ffffff",
+              "numberOfLines": 0
+            }
+          }
+        },
+        {
+          "id": 480000,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent",
+              "background": "#FFFFFF",
+              "hideNavBar": false,
+              "navBarColor": "#04ac5c"
+            },
+            "componentId": [
+              480001,
+              480002,
+              480003,
+              480007,
+              480008,
+              480009,
+              4800013,
+              4800014,
+              4800018,
+              4800019,
+              4800020,
+              4800021,
+              4800022,
+              4800023,
+              4800024,
+              4800025
+            ],
+            "Comment": "Raast"
+          }
+        },
+        {
+          "id": 480001,
+          "comment": "top_bg",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "170",
+              "leftToLeftOf": 480000,
+              "rightToRightOf": 480000,
+              "topToTopOf": 480000,
+              "background": "#04ac5c"
+            }
+          }
+        },
+        {
+          "id": 480002,
+          "Comment": "imageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "140",
+              "layout_height": "140",
+              "topToTopOf": 480001,
+              "centerX": 480001,
+              "layout_marginTop": 30,
+              "src": "drawable/raast_logo"
+            }
+          }
+        },
+        {
+          "id": 480003,
+          "comment": "view",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_height": "50",
+              "leftToLeftOf": 480000,
+              "rightToRightOf": 480000,
+              "topToBottomOf": 480001,
+              "layout_marginTop": 20,
+              "background": "#E9F2EE",
+              "cornerRadius": 8,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20
+            },
+            "componentId": [
+              480004,
+              480005,
+              480006
+            ]
+          }
+        },
+        {
+          "id": 480004,
+          "Comment": "imageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "20",
+              "layout_height": "20",
+              "leftToLeftOf": 480003,
+              "centerY": 480003,
+              "layout_marginLeft": 20,
+              "src": "drawable/star_icon"
+            }
+          }
+        },
+        {
+          "id": 480005,
+          "Comment": "imageView",
+          "type": 100011,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "20",
+              "layout_height": "20",
+              "leftToRightOf": 480004,
+              "layout_marginLeft": 20,
+              "centerY": 480003,
+              "src": "drawable/contact_us"
+            }
+          }
+        },
+        {
+          "id": 480006,
+          "Comment": "label",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "20",
+              "centerY": 480003,
+              "rightToRightOf": 480003,
+              "leftToRightOf": 480005,
+              "layout_marginRight": 20,
+              "layout_marginLeft": 20,
+              "text": "+92 332 458784",
+              "textColor": "#000000",
+              "textStyle": "bold",
+              "textSize": 18
+            }
+          }
+        },
+        {
+          "id": 480007,
+          "Comment": "label",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "200",
+              "layout_height": "20",
+              "leftToLeftOf": 480000,
+              "topToBottomOf": 480003,
+              "layout_marginLeft": 20,
+              "layout_marginTop": 40,
+              "text": "Choose Your Alias",
+              "textStyle": "bold",
+              "textColor": "#34a848",
+              "textSize": 18
+            }
+          }
+        },
+        {
+          "id": 480008,
+          "Comment": "textView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "300",
+              "layout_height": "120",
+              "leftToLeftOf": 480000,
+              "topToBottomOf": 480007,
+              "layout_marginLeft": 20,
+              "layout_marginTop": 20,
+              "text": "You can choose your registered mobile number or your CNIC as your alias. Once you have registered people can send funds to you using your alias.",
+              "textColor": "#000000",
+              "textSize": 18
+            }
+          }
+        },
+        {
+          "id": 480009,
+          "comment": "view",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_height": "50",
+              "leftToLeftOf": 480000,
+              "rightToRightOf": 480000,
+              "topToBottomOf": 480008,
+              "layout_marginTop": 20,
+              "background": "#E9F2EE",
+              "cornerRadius": 8,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20
+            },
+            "componentId": [
+              4800012,
+              4800011,
+              4800010
+            ]
+          }
+        },
+        {
+          "id": 4800010,
+          "Comment": "textView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "20",
+              "leftToLeftOf": 480009,
+              "rightToLeftOf": 4800011,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "centerY": 480009,
+              "text": "+92 332 458784",
+              "textColor": "#000000",
+              "textStyle": "bold",
+              "textSize": 18,
+              "textAlignment": "center"
+            }
+          }
+        },
+        {
+          "id": 4800011,
+          "comment": "view",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "3",
+              "layout_height": "match_constraint",
+              "rightToLeftOf": 4800012,
+              "topToTopOf": 480009,
+              "bottomToBottomOf": 480009,
+              "background": "#d9dbda"
+            }
+          }
+        },
+        {
+          "id": 4800012,
+          "Comment": "btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "100",
+              "layout_height": "match_constraint",
+              "bottomToBottomOf": 480009,
+              "rightToRightOf": 480009,
+              "topToTopOf": 480009,
+              "text": "...",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "textSize": 16
+            },
+            "events": [
+              {
+                "type": 1,
+                "Comment": "on click",
+                "triggerId": 16
+              }
+            ]
+          }
+        },
+        {
+          "id": 4800013,
+          "Comment": "textView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "200",
+              "layout_height": "20",
+              "leftToLeftOf": 480000,
+              "topToBottomOf": 480009,
+              "layout_marginLeft": 20,
+              "layout_marginTop": 40,
+              "text": "Choose Account",
+              "textStyle": "bold",
+              "textColor": "#34a848",
+              "textSize": 18
+            }
+          }
+        },
+        {
+          "id": 4800014,
+          "comment": "view",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_height": "50",
+              "leftToLeftOf": 480000,
+              "rightToRightOf": 480000,
+              "topToBottomOf": 4800013,
+              "layout_marginTop": 20,
+              "background": "#E9F2EE",
+              "cornerRadius": 8,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20
+            },
+            "componentId": [
+              4800017,
+              4800016,
+              4800015
+            ]
+          }
+        },
+        {
+          "id": 4800015,
+          "Comment": "textView",
+          "type": 10004,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "selectedAccountType.value",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "20",
+              "leftToLeftOf": 4800014,
+              "rightToLeftOf": 4800016,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "centerY": 4800014,
+              "placeHolderText": "Current - 0123456678",
+              "placeHolderTextColor": "#000000",
+              "textColor": "#000000",
+              "textStyle": "bold",
+              "textSize": 18,
+              "textAlignment": "center"
+            }
+          }
+        },
+        {
+          "id": 4800016,
+          "comment": "view",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "3",
+              "layout_height": "match_constraint",
+              "rightToLeftOf": 4800017,
+              "topToTopOf": 4800014,
+              "bottomToBottomOf": 4800014,
+              "background": "#d9dbda"
+            }
+          }
+        },
+        {
+          "id": 4800017,
+          "Comment": "btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "100",
+              "layout_height": "match_constraint",
+              "bottomToBottomOf": 4800014,
+              "rightToRightOf": 4800014,
+              "topToTopOf": 4800014,
+              "text": "...",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "textSize": 16
+            },
+            "events": [
+              {
+                "type": 1,
+                "Comment": "on click",
+                "triggerId": 16
+              }
+            ]
+          }
+        },
+        {
+          "id": 4800018,
+          "Comment": "btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "50",
+              "topToBottomOf": 4800014,
+              "rightToRightOf": 480000,
+              "layout_marginRight": 20,
+              "layout_marginTop": 20,
+              "text": "Select",
+              "textColor": "#ffffff",
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "background": "#00B542",
+              "textAlignment": "center",
+              "textSize": 16,
+              "cornerRadius": 8,
+              "textStyle": "bold"
+            }
+          }
+        },
+        {
+          "id": 4800019,
+          "comment": "view",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "2",
+              "leftToLeftOf": 480000,
+              "rightToRightOf": 480000,
+              "topToBottomOf": 4800018,
+              "background": "#d9dbda",
+              "layout_marginTop": 30
+            }
+          }
+        },
+        {
+          "id": 4800020,
+          "Comment": "Btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "70",
+              "layout_height": "70",
+              "centerX": 480000,
+              "topToBottomOf": 4800019,
+              "layout_marginTop": 20,
+              "cornerRadius": 35,
+              "background": "#00B542"
+            }
+          }
+        },
+        {
+          "id": 4800021,
+          "Comment": "Btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "70",
+              "layout_height": "70",
+              "rightToLeftOf": 4800020,
+              "topToBottomOf": 4800019,
+              "layout_marginTop": 20,
+              "layout_marginRight": 40,
+              "background": "#00B542",
+              "cornerRadius": 35
+            }
+          }
+        },
+        {
+          "id": 4800022,
+          "Comment": "Btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "70",
+              "layout_height": "70",
+              "leftToRightOf": 4800020,
+              "topToBottomOf": 4800019,
+              "layout_marginTop": 20,
+              "background": "#00B542",
+              "cornerRadius": 35,
+              "layout_marginLeft": 40
+            }
+          }
+        },
+        {
+          "id": 4800023,
+          "Comment": "textView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "32",
+              "bottomToBottomOf": 480000,
+              "leftToLeftOf": 4800020,
+              "topToBottomOf": 4800020,
+              "rightToRightOf": 4800020,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 20,
+              "text": "FAQ",
+              "textColor": "#34b528",
+              "textStyle": "bold",
+              "textSize": 14,
+              "textAlignment": "center"
+            }
+          }
+        },
+        {
+          "id": 4800024,
+          "Comment": "textView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "32",
+              "bottomToBottomOf": 480000,
+              "leftToLeftOf": 4800021,
+              "rightToRightOf": 4800021,
+              "topToBottomOf": 4800021,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 20,
+              "text": "About Us",
+              "textColor": "#34b528",
+              "textStyle": "bold",
+              "textSize": 14,
+              "textAlignment": "center"
+            }
+          }
+        },
+        {
+          "id": 4800025,
+          "Comment": "textView",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "wrap_content",
+              "layout_height": "32",
+              "bottomToBottomOf": 480000,
+              "leftToLeftOf": 4800022,
+              "rightToRightOf": 4800022,
+              "topToBottomOf": 4800022,
+              "layout_marginTop": 10,
+              "layout_marginBottom": 20,
+              "text": "Messages",
+              "textColor": "#34b528",
+              "textStyle": "bold",
+              "textSize": 14,
+              "textAlignment": "center"
+            }
+          }
+        },
+        {
+          "id": 48000011,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent",
+              "background": "drawable/bg",
+              "hideNavBar": false,
+              "navBarColor": "#04ac5c"
+            },
+            "componentId": [
+              48000012,
+              4800026
+            ],
+            "Comment": "Raast"
+          }
+        },
+        {
+          "id": 48000012,
+          "Comment": "searchView",
+          "type": 100018,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "searchKey": "name",
+          "bindingKey": "config.lookups.accountType",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "50",
+              "leftToLeftOf": 48000011,
+              "rightToRightOf": 48000011,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "layout_marginTop": 20,
+              "topToTopOf": 48000011,
+              "searchComponentId": 4800026
+            }
+          }
+        },
+        {
+          "id": 4800026,
+          "Comment": "recyclerView",
+          "type": 10007,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "config.lookups.accountType",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "match_constraint",
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "layout_marginTop": 20,
+              "layout_marginBottom": 20,
+              "leftToLeftOf": 48000011,
+              "rightToRightOf": 48000011,
+              "topToBottomOf": 48000012,
+              "bottomToBottomOf": 48000011,
+              "rowId": "4800027",
+              "background": "#ffffff"
+            }
+          }
+        },
+        {
+          "id": 4800027,
+          "Comment": "Constraint",
+          "type": 10009,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content"
+            },
+            "componentId": [
+              4800028
+            ]
+          }
+        },
+        {
+          "id": 4800028,
+          "Comment": "textview list item",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "name",
+          "attributes": {
+            "layoutProperties": {
+              "background": "#ffffff",
+              "layout_width": "wrap_content",
+              "layout_height": "wrap_content",
+              "text": "Current Account",
+              "textColor": "#000000",
+              "textAlignment": "center",
+              "textSize": 20,
+              "clickable": false,
+              "topToTopOf": 4800027,
+              "leftToLeftOf": 4800027,
+              "rightToRightOf": 4800027,
+              "bottomToBottomOf": 4800027,
+              "layout_marginTop": 20,
+              "layout_marginLeft": 20,
+              "layout_marginRight": 20,
+              "layout_marginBottom": 20
+            }
+          }
+        },
+        {
+          "id": 440000,
+          "Comment": "Constraint",
+          "type": 10001,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "match_parent",
+              "background": "#FFFFFF"
+            },
+            "componentId": [
+              440026,
+              440001,
+              440002,
+              440003,
+              440027,
+              440028,
+              440029,
+              440004,
+              440005,
+              440006,
+              440030,
+              440031,
+              440007,
+              440008,
+              440033,
+              440009,
+              440010,
+              440032,
+              440034,
+              440035,
+              440011,
+              440012,
+              440036,
+              440037,
+              440013,
+              440014,
+              440038
+            ],
+            "Comment": "Funds Transfer Screen"
+          }
+        },
+        {
+          "id": 440026,
+          "comment": "view",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "120",
+              "leftToLeftOf": 440000,
+              "topToTopOf": 440000,
+              "rightToRightOf": 440000,
+              "layout_marginTop": 10
+            }
+          }
+        },
+        {
+          "id": 440001,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "36",
+              "text": "Sending From",
+              "textStyle": "bold",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 20,
+              "leftToLeftOf": 440026,
+              "topToTopOf": 440026
+            }
+          }
+        },
+        {
+          "id": 440002,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "AL SALAAMA PES",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 20,
+              "leftToLeftOf": 440026,
+              "topToBottomOf": 440001
+            }
+          }
+        },
+        {
+          "id": 440003,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "123456781233",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "clickable": false,
+              "layout_marginLeft": 20,
+              "leftToLeftOf": 440026,
+              "topToBottomOf": 440002
+            }
+          }
+        },
+        {
+          "id": 440027,
+          "Comment": "btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "20",
+              "layout_height": "20",
+              "rightToRightOf": 440026,
+              "topToTopOf": 440026,
+              "paddingBottom": 5,
+              "layout_marginRight": 30,
+              "layout_marginTop": 10,
+              "src": "drawable/down_arrow_grey"
+            }
+          }
+        },
+        {
+          "id": 440028,
+          "Comment": "btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "76",
+              "layout_height": "20",
+              "rightToRightOf": 440026,
+              "bottomToBottomOf": 440026,
+              "layout_marginRight": 30,
+              "layout_marginBottom": 10,
+              "paddingLeft": 5,
+              "paddingRight": 5,
+              "text": "SHOW AMOUNT",
+              "textColor": "#000000",
+              "textSize": 9,
+              "textStyle": "bold",
+              "textAlignment": "center",
+              "cornerRadius": 8,
+              "borderWidth": 1,
+              "borderColor": "#000000"
+            }
+          }
+        },
+        {
+          "id": 440029,
+          "comment": "view",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "120",
+              "leftToLeftOf": 440000,
+              "topToBottomOf": 440026,
+              "rightToRightOf": 440000,
+              "layout_marginTop": 5
+            }
+          }
+        },
+        {
+          "id": 440004,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "Sending To",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textStyle": "bold",
+              "textSize": 14,
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 20,
+              "leftToLeftOf": 440029,
+              "topToTopOf": 440029
+            }
+          }
+        },
+        {
+          "id": 440005,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "--",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 20,
+              "leftToLeftOf": 440029,
+              "topToBottomOf": 440004
+            }
+          }
+        },
+        {
+          "id": 440006,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "150",
+              "layout_height": "24",
+              "text": "--",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 20,
+              "leftToLeftOf": 440029,
+              "topToBottomOf": 440005
+            }
+          }
+        },
+        {
+          "id": 440030,
+          "Comment": "btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "20",
+              "layout_height": "20",
+              "rightToRightOf": 440029,
+              "topToTopOf": 440029,
+              "paddingBottom": 5,
+              "layout_marginRight": 30,
+              "layout_marginTop": 10,
+              "background": "drawable/down_arrow_grey"
+            }
+          }
+        },
+        {
+          "id": 440031,
+          "comment": "view",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "72",
+              "layout_height": "80",
+              "leftToLeftOf": 440000,
+              "topToBottomOf": 440029,
+              "layout_marginTop": 5,
+              "layout_marginLeft": 10
+            }
+          }
+        },
+        {
+          "id": 440007,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "68",
+              "layout_height": "24",
+              "text": "Currency",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "textStyle": "bold",
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 10,
+              "leftToLeftOf": 440031,
+              "topToTopOf": 440031
+            }
+          }
+        },
+        {
+          "id": 440008,
+          "Comment": "editText",
+          "type": 10004,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "68",
+              "layout_height": "32",
+              "placeHolderText": "PKR",
+              "textColor": "#000000",
+              "placeHolderTextColor": "#000000",
+              "textSize": 14,
+              "textAlignment": "left",
+              "layout_marginTop": 10,
+              "layout_marginLeft": 10,
+              "leftToLeftOf": 440031,
+              "topToBottomOf": 440007
+            }
+          }
+        },
+        {
+          "id": 440033,
+          "comment": "view",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "200",
+              "layout_height": "80",
+              "leftToRightOf": 440031,
+              "topToBottomOf": 440029,
+              "layout_marginTop": 5,
+              "layout_marginLeft": 10
+            }
+          }
+        },
+        {
+          "id": 440009,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "68",
+              "layout_height": "24",
+              "text": "Amount",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "textStyle": "bold",
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 10,
+              "leftToLeftOf": 440033,
+              "topToTopOf": 440033
+            }
+          }
+        },
+        {
+          "id": 440010,
+          "Comment": "editText",
+          "type": 10004,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "200",
+              "layout_height": "32",
+              "placeHolderText": "Enter amount here",
+              "textColor": "#000000",
+              "placeHolderTextColor": "#000000",
+              "textSize": 14,
+              "background": null,
+              "textAlignment": "left",
+              "layout_marginTop": 10,
+              "layout_marginLeft": 10,
+              "leftToLeftOf": 440033,
+              "topToBottomOf": 440009
+            }
+          }
+        },
+        {
+          "id": 440032,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "2",
+              "background": "#000000",
+              "clickable": false,
+              "leftToLeftOf": 440031,
+              "rightToRightOf": 440031,
+              "bottomToBottomOf": 440031
+            }
+          }
+        },
+        {
+          "id": 440034,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "2",
+              "background": "#000000",
+              "clickable": false,
+              "leftToLeftOf": 440033,
+              "rightToRightOf": 440033,
+              "bottomToBottomOf": 440033
+            }
+          }
+        },
+        {
+          "id": 440015,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "60",
+              "clickable": false,
+              "leftToLeftOf": 440000,
+              "rightToRightOf": 440000,
+              "topToBottomOf": 440031,
+              "layout_marginTop": 20
+            }
+          }
+        },
+        {
+          "id": 440016,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "2",
+              "layout_height": "44",
+              "background": null,
+              "clickable": false,
+              "layout_marginLeft": 20,
+              "leftToRightOf": 440007,
+              "topToTopOf": 440015,
+              "bottomToBottomOf": 440015
+            }
+          }
+        },
+        {
+          "id": 440035,
+          "comment": "view",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "80",
+              "leftToLeftOf": 440000,
+              "topToBottomOf": 440031,
+              "rightToRightOf": 440000,
+              "layout_marginTop": 5,
+              "layout_marginLeft": 10,
+              "layout_marginRight": 10
+            }
+          }
+        },
+        {
+          "id": 440011,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "24",
+              "text": "Purpose of Sending",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "textStyle": "bold",
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 20,
+              "leftToLeftOf": 440035,
+              "rightToRightOf": 440035,
+              "topToTopOf": 440035
+            }
+          }
+        },
+        {
+          "id": 440012,
+          "Comment": "editText",
+          "type": 10004,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "bindingKey": "selectedDate",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "32",
+              "placeHolderText": "Select purpose of payment",
+              "textColor": "#000000",
+              "placeHolderTextColor": "#000000",
+              "textSize": 14,
+              "textAlignment": "left",
+              "layout_marginTop": 10,
+              "layout_marginLeft": 30,
+              "leftToLeftOf": 440035,
+              "rightToRightOf": 440035,
+              "topToBottomOf": 440011
+            }
+          }
+        },
+        {
+          "id": 440036,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "2",
+              "background": "#000000",
+              "clickable": false,
+              "leftToLeftOf": 440035,
+              "rightToRightOf": 440035,
+              "bottomToBottomOf": 440035
+            }
+          }
+        },
+        {
+          "id": 440037,
+          "comment": "view",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "80",
+              "leftToLeftOf": 440000,
+              "topToBottomOf": 440035,
+              "rightToRightOf": 440000,
+              "layout_marginTop": 5,
+              "layout_marginLeft": 10,
+              "layout_marginRight": 10
+            }
+          }
+        },
+        {
+          "id": 440013,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "24",
+              "text": "Comment",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "textStyle": "bold",
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 20,
+              "leftToLeftOf": 440037,
+              "rightToRightOf": 440037,
+              "topToTopOf": 440037
+            }
+          }
+        },
+        {
+          "id": 440014,
+          "Comment": "editText",
+          "type": 10004,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "32",
+              "placeHolderText": "Enter your comment here",
+              "textColor": "#000000",
+              "placeHolderTextColor": "#000000",
+              "textSize": 14,
+              "background": null,
+              "textAlignment": "left",
+              "layout_marginTop": 10,
+              "layout_marginLeft": 30,
+              "leftToLeftOf": 440037,
+              "rightToRightOf": 440037,
+              "topToBottomOf": 440013
+            }
+          }
+        },
+        {
+          "id": 440038,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_constraint",
+              "layout_height": "2",
+              "background": "#000000",
+              "clickable": false,
+              "leftToLeftOf": 440037,
+              "rightToRightOf": 440037,
+              "bottomToBottomOf": 440037
+            }
+          }
+        },
+        {
+          "id": 440017,
+          "Comment": "View",
+          "type": 10002,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "44",
+              "background": null,
+              "clickable": false,
+              "leftToLeftOf": 440000,
+              "rightToRightOf": 440000,
+              "topToBottomOf": 440014
+            }
+          }
+        },
+        {
+          "id": 440018,
+          "Comment": "textview",
+          "type": 10003,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "24",
+              "text": "Do you want to pay later?",
+              "textColor": "#000000",
+              "textAlignment": "left",
+              "textSize": 14,
+              "textStyle": "bold",
+              "clickable": false,
+              "layout_marginTop": 10,
+              "layout_marginLeft": 20,
+              "leftToLeftOf": 440017,
+              "topToTopOf": 440017,
+              "bottomToBottomOf": 440017
+            }
+          }
+        },
+        {
+          "id": 440019,
+          "Comment": "radioGroup",
+          "type": 100013,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "56",
+              "layout_height": "28",
+              "layout_marginTop": 10,
+              "topToTopOf": 440017,
+              "rightToRightOf": 440017,
+              "bottomToBottomOf": 440017,
+              "orientation": "horizontal",
+              "background": "drawable/toggle_background"
+            },
+            "componentId": [
+              440020,
+              440021
+            ]
+          }
+        },
+        {
+          "id": 440020,
+          "Comment": "radiobutton",
+          "type": 100014,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "48",
+              "layout_height": "28",
+              "layout_weight": 1,
+              "checked": true,
+              "textColor": "#FFFFFF",
+              "gravity": "gravityCenter",
+              "background": "drawable/toggle_selector"
+            }
+          }
+        },
+        {
+          "id": 440021,
+          "Comment": "radiobutton",
+          "type": 100014,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "48",
+              "layout_height": "28",
+              "layout_weight": 1,
+              "checked": false,
+              "textColor": "#FFFFFF",
+              "gravity": "gravityCenter",
+              "background": "drawable/toggle_selector"
+            }
+          }
+        },
+        {
+          "id": 440022,
+          "Comment": "nextBtn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "match_parent",
+              "layout_height": "48",
+              "leftToLeftOf": 440000,
+              "bottomToBottomOf": 440000,
+              "rightToRightOf": 440000,
+              "text": "Next",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "gravity": "gravityCenter",
+              "textSize": 14,
+              "background": "#2839fa"
+            }
+          }
+        },
+        {
+          "id": 440023,
+          "Comment": "Btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "120",
+              "layout_height": "32",
+              "leftToLeftOf": 440000,
+              "bottomToTopOf": 440022,
+              "rightToLeftOf": 440024,
+              "topToBottomOf": 440019,
+              "text": "Pay Now",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "gravity": "gravityCenter",
+              "textSize": 14,
+              "background": "drawable/back_btn_gray"
+            }
+          }
+        },
+        {
+          "id": 440024,
+          "Comment": "Btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "120",
+              "layout_height": "32",
+              "leftToRightOf": 440023,
+              "bottomToTopOf": 440022,
+              "rightToLeftOf": 440025,
+              "topToBottomOf": 440019,
+              "text": "Time Schedule",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "gravity": "gravityCenter",
+              "textSize": 14,
+              "background": "drawable/back_btn_gray"
+            },
+            "events": [
+              {
+                "type": 1,
+                "Comment": "Navigate to Schedule",
+                "triggerId": 52
+              }
+            ]
+          }
+        },
+        {
+          "id": 440025,
+          "Comment": "Btn",
+          "type": 10005,
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+          "attributes": {
+            "layoutProperties": {
+              "layout_width": "120",
+              "layout_height": "32",
+              "leftToRightOf": 440024,
+              "bottomToTopOf": 440022,
+              "rightToRightOf": 440000,
+              "topToBottomOf": 440019,
+              "text": "Reminder",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "gravity": "gravityCenter",
+              "textSize": 14,
+              "background": "drawable/back_btn_gray"
+            },
+            "events": [
+              {
+                "type": 1,
+                "Comment": "Navigate to Remainder",
+                "triggerId": 53
+              }
+            ]
+          }
+        }
+      ],
+      "triggers": [
+        {
+          "id": 1,
+          "Comment": "jump to pre-login home screen",
+          "services": [
+            {
+              "type": 1,
+              "Comment": "Screen Navigate Service",
+              "command": {
+                "type": 1,
+                "Comment": "navigatescreen function",
+                "attributes": {
+                  "id": 1230123
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "Comment": "jump to login screen",
+          "services": [
+            {
+              "type": 1,
+              "Comment": "FlowManagerService",
+              "command": {
+                "type": 2,
+                "Comment": "navigatescreen",
+                "attributes": {
+                  "id": 101122
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "Comment": "jump to dashboard screen",
+          "services": [
+            {
+              "type": 1,
+              "Comment": "FlowManagerService",
+              "command": {
+                "type": 2,
+                "Comment": "navigatescreen",
+                "attributes": {
+                  "id": 12345
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "Comment": "get faq nework call",
+          "services": [
+            {
+              "type": 2,
+              "Comment": "Network Service",
+              "command": {
+                "type": 1,
+                "Comment": "post api",
+                "attributes": {
+                  "method": "POST",
+                  "responseBody": "faq",
+                  "url": "http://172.16.11.52:8762/prelogin/v1/getAllFAQs",
+                  "header": {
+                    "Content-Type": "application/json",
+                    "channel_key": "005"
+                  }
+                },
+                "returnCode": [
+                  {
+                    "code": "1",
+                    "triggerId": 14
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "Comment": "get lookup and config",
+          "services": [
+            {
+              "type": 2,
+              "Comment": "Network Service",
+              "command": {
+                "type": 1,
+                "Comment": "post api",
+                "attributes": {
+                  "method": "POST",
+                  "responseBody": "config",
+                  "url": "http://172.16.11.52:8762/prelogin/v1/getConfiguration",
+                  "header": {
+                    "Content-Type": "application/json",
+                    "channel_key": "005"
+                  },
+                  "body": {
+                    "lookUps": [
+                      "ACCOUNT_TYPE"
+                    ],
+                    "systemConfiguration": true,
+                    "securityConfiguration": true,
+                    "device": {
+                      "deviceKey": "$deviceId",
+                      "deviceName": "$deviceName",
+                      "fcmToken": "$fcmToken",
+                      "imei": "$imei",
+                      "isNotificationEnabled": "$isNotificationEnabled",
+                      "os": "$OS",
+                      "osType": "$osType"
+                    }
+                  }
+                },
+                "returnCode": [
+                  {
+                    "code": "2",
+                    "triggerId": 4
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "Comment": "back to splash screen",
+          "services": [
+            {
+              "type": 1,
+              "Comment": "FlowManagerService",
+              "command": {
+                "type": 2,
+                "Comment": "navigatescreen",
+                "attributes": {
+                  "id": 100033
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "Comment": "Validation Servic Service",
+          "services": [
+            {
+              "type": 4,
+              "Comment": "Validation Service",
+              "command": {
+                "type": 1,
+                "Comment": "validation function",
+                "attributes": {
+                  "componentId": [
+                    10013
+                  ]
+                },
+                "returnCode": [
+                  {
+                    "code": "1",
+                    "triggerId": 32
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "Comment": "login network call",
+          "services": [
+            {
+              "type": 2,
+              "Comment": "Network Service",
+              "command": {
+                "type": 1,
+                "Comment": "post api",
+                "attributes": {
+                  "method": "POST",
+                  "responseBody": "loginResponse",
+                  "url": "http://172.16.11.52:8762/security/v5/validateLoginPassword",
+                  "header": {
+                    "Content-Type": "application/json",
+                    "channel_key": "005",
+                    "app_version": "6"
+                  },
+                  "body": {
+                    "device": {
+                      "deviceKey": "$deviceKey",
+                      "deviceName": "$deviceName",
+                      "fcmToken": "$fcmToken",
+                      "imei": "$imei",
+                      "isNotificationEnabled": true,
+                      "os": "$os",
+                      "osType": "$osType"
+                    },
+                    "loginPin": "",
+                    "password": "$password",
+                    "loginType": "CREDENTIALS",
+                    "username": "$username"
+                  }
+                },
+                "returnCode": [
+                  {
+                    "code": "1",
+                    "triggerId": 20
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "Comment": "accounts network call",
+          "services": [
+            {
+              "type": 2,
+              "Comment": "Network Service",
+              "command": {
+                "type": 1,
+                "Comment": "post api",
+                "attributes": {
+                  "method": "POST",
+                  "responseBody": "accounts",
+                  "url": "http://172.16.11.52:8762/account/v1/getAllAccountsWithBalance",
+                  "header": {
+                    "Content-Type": "application/json",
+                    "channel_key": "005",
+                    "Authorization": "$loginResponse.token"
+                  },
+                  "body": {
+                    "accountType": "ALL"
+                  },
+                  "filters": {
+                    "casaAccounts": {
+                      "displayValue": "CASA",
+                      "filterKey": "casaAccounts",
+                      "filterRowId": "100058"
+                    },
+                    "tdrAccounts": {
+                      "displayValue": "TDR",
+                      "filterKey": "tdrAccounts",
+                      "filterRowId": "100058"
+                    },
+                    "loanAccounts": {
+                      "displayValue": "LOAN",
+                      "filterKey": "loanAccounts",
+                      "filterRowId": "100058"
+                    }
+                  },
+                  "bindingKey": "accountFilter"
+                },
+                "returnCode": [
+                  {
+                    "code": "1"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "Comment": "UI Service",
+          "services": [
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 6,
+                "Comment": "account filter onClick function",
+                "attributes": {
+                  "bindingKey": "accounts",
+                  "dependentKey": "filteredAccounts"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "Comment": "UI Service",
+          "services": [
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 1,
+                "Comment": "toggleText function",
+                "attributes": {
+                  "bindingKey": "loginButton",
+                  "values": [
+                    "show",
+                    "hide"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "Comment": "UI Service",
+          "services": [
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 1,
+                "Comment": "toggleText function",
+                "attributes": {
+                  "bindingKey": "loginButton",
+                  "values": [
+                    "show",
+                    "hide"
+                  ]
+                }
+              }
+            },
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 2,
+                "Comment": "toggleVisibility function",
+                "attributes": {
+                  "componentId": 100028
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "Comment": "UI Service",
+          "services": [
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 3,
+                "Comment": "recyclerViewtoggleText function",
+                "attributes": {
+                  "bindingKey": "$userlist.name",
+                  "values": [
+                    "$show",
+                    "$amount"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "Comment": "UI Service",
+          "services": [
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 4,
+                "Comment": "recyclerViewtoggleVisibility function",
+                "attributes": {
+                  "bindingKey": "userlist",
+                  "componentId": 100037
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "Comment": "UI Service",
+          "services": [
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 3,
+                "Comment": "recyclerViewtoggleText function",
+                "attributes": {
+                  "bindingKey": "$userlist.new",
+                  "values": [
+                    "new",
+                    "old"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "Comment": "jump to login screen",
+          "services": [
+            {
+              "type": 1,
+              "Comment": "FlowManagerService",
+              "command": {
+                "type": 2,
+                "Comment": "navigatescreen",
+                "attributes": {
+                  "id": "100041"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "Comment": "UI Service",
+          "services": [
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 4,
+                "Comment": "cellColorChange function",
+                "attributes": {
+                  "bindingKey": "accountFilter",
+                  "values": [
+                    "#0000ff",
+                    "#E7EAF1"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "Comment": "UI Service",
+          "services": [
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 6,
+                "Comment": "account filter onClick function",
+                "attributes": {
+                  "bindingKey": "accounts",
+                  "dependentKey": "filteredAccounts"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "Comment": "Validation Service",
+          "services": [
+            {
+              "type": 4,
+              "Comment": "Validation Service",
+              "command": {
+                "type": 1,
+                "Comment": "validation function",
+                "attributes": {
+                  "componentId": [
+                    10013,
+                    10014
+                  ]
+                },
+                "returnCode": [
+                  {
+                    "code": "1",
+                    "triggerId": 32
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "Comment": "jump to FAQ Screen",
+          "services": [
+            {
+              "type": 1,
+              "Comment": "FlowManagerService",
+              "command": {
+                "type": 1,
+                "Comment": "navigatescreen",
+                "attributes": {
+                  "id": 100081
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "Comment": "UI Service",
+          "services": [
+            {
+              "type": 3,
+              "Comment": "UI Service",
+              "command": {
+                "type": 3,
+                "Comment": "recyclerViewtoggleVisibility function",
+                "attributes": {
+                  "bindingKey": "faq",
+                  "componentId": 100084
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "Comment": "Show Bottom Sheet",
+          "services": [
+            {
+              "type": 1,
+              "Comment": "Navigation Service",
+              "command": {
+                "type": 3,
+                "Comment": "Show Bottom Sheet function",
+                "attributes": {
+                  "bindingKey": "config.lookups.accountType",
+                  "selectedBindingKey": "selectedAccountType",
+                  "title": "Account Types"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "Comment": "Show Date Picker",
+          "services": [
+            {
+              "type": 1,
+              "Comment": "Navigation Service",
+              "command": {
+                "type": 4,
+                "Comment": "Show Date Picker function",
+                "attributes": {
+                  "selectedBindingKey": "selectedDate"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "id": 1,
+          "uri": "https://assets.unify.com/splash.mp4",
+          "checksum": "098f6bcd4621d373cade4e832627b4f6"
+        },
+        {
+          "id": 2,
+          "uri": "https://assets.unify.com/logo.jpg",
+          "checksum": "098f6bcd4621d373cade4e832627b4f6"
+        },
+        {
+          "id": 3,
+          "uri": "https://assets.unify.com/defaultImage.jpg",
+          "checksum": "098f6bcd4621d373cade4e832627b4f6"
+        },
+        {
+          "id": 4,
+          "uri": "https://assets.unify.com/bgImage.jpg",
+          "checksum": "098f6bcd4621d373cade4e832627b4f6"
+        },
+        {
+          "id": 5,
+          "uri": "https://assets.unify.com/buttonImage.jpg",
+          "checksum": "098f6bcd4621d373cade4e832627b4f6"
+        },
+        {
+          "id": 6,
+          "uri": "https://assets.unify.com/buttonOnHoverImage.jpg",
+          "checksum": "098f6bcd4621d373cade4e832627b4f6"
+        },
+        {
+          "id": 7,
+          "uri": "https://assets.unify.com/buttonOnClickImage.jpg",
+          "checksum": "098f6bcd4621d373cade4e832627b4f6"
+        },
+        {
+          "id": 8,
+          "uri": "https://assets.unify.com/buttonBgImage.jpg",
+          "checksum": "098f6bcd4621d373cade4e832627b4f6"
+        }
+      ]
+    }
+  }
+}
