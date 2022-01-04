@@ -42,19 +42,26 @@ class MainActivity : AppCompatActivity(), IUnifyNetworkService {
 
 
     fun initializeSDK(view: View) {
-        UnifyRuntimePermission.getInstance().getPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) {
-            val dataFromHostapp: MutableMap<String, Any> = HashMap();
-            dataFromHostapp["CPR"] = "00700" // this value provide by host app
+        UnifyRuntimePermission.getPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE, object : UnifyRuntimePermission.UnifyPermissionGrantedResponse {
+            override fun onUnifyPermissionGranted() {
+                val dataFromHostapp: MutableMap<String, Any> = HashMap();
+                dataFromHostapp["CPR"] = "00700" // this value provide by host app
 //            Unify.getInstance().initializeSDK(this, "http://10.0.2.2:3000/unify_json", dataFromHostapp, null, this)
 //            Unify.getInstance().initializeSDK(this, "http://172.16.2.229:3000/unify_json", dataFromHostapp, null, this)
-            Unify.getInstance().initializeSDK(this, "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/presales_new_demo.json", dataFromHostapp, null, this)
-        }
+                Unify.getInstance().initializeSDK(this@MainActivity, "http://mdu-site1.avanzasolutions.com:8010/unifyjsons/presales_new_demo.json", dataFromHostapp, null, this@MainActivity)
+            }
+
+        })
     }
 
     fun launchSDK(view: View) {
-        UnifyRuntimePermission.getInstance().getPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) {
-            Unify.getInstance().launchSDK(this, null);
-        }
+        UnifyRuntimePermission.getPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE, object : UnifyRuntimePermission.UnifyPermissionGrantedResponse {
+            override fun onUnifyPermissionGranted() {
+                Unify.getInstance().launchSDK(this@MainActivity, null);
+            }
+
+        })
+
     }
 
 }
