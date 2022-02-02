@@ -46,6 +46,10 @@
                 tools:replace="android:resource" />
         </provider>
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD2XcPn-EqezQYn5UFdjAShjUfRCDiPCBU" />
+
     </application>
 
 </manifest>
