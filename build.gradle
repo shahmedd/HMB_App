@@ -21,6 +21,7 @@ allprojects {
         gradlePluginPortal()
         maven { url "https://jitpack.io" }
         maven { url 'https://mobile-sdk.jumio.com' }
+        maven { url 'https://anylinesdk.blob.core.windows.net/maven/'}
 
 
     }
