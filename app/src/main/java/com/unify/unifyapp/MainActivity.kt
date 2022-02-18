@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity(), IUnifyNetworkService {
                 Unify.getInstance().initializeSDK(
                     this@MainActivity,
                     "http://10.0.2.2:3000/unify_json/demo",
+                    true,
                     dataFromHostapp,
                     null,
                     this@MainActivity
