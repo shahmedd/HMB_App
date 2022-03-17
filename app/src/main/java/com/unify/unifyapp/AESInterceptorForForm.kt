@@ -7,7 +7,7 @@ import okio.Buffer
 import org.json.JSONObject
 import java.io.IOException
 
-object AESInterceptor : Interceptor, IUnifyInterceptor {
+object AESInterceptorForForm : Interceptor, IUnifyInterceptor {
     @Throws(IOException::class)
     override fun intercept(chain: Interceptor.Chain): Response {
 
