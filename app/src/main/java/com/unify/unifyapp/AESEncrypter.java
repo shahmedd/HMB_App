@@ -20,12 +20,12 @@ public class AESEncrypter {
     private static AESEncrypter instance;
 
     private static final String ENCRYPTER_ALGO = "AES";
-    private final String key = "501f030ae5a3#2y5";
 
+    private final String key = "jQABzXbxoRAVIGjKGph4GBFKgoNxfmNK";
 
     private final String SENSITIVE_FIELD_ENCRYPTER_ALGO = "AES/CBC/PKCS5Padding";
     private final String senditiveFieldKey = "(H+MbQeThWmZq4t7w!z%C*F)J@NcRfUj";
-    private final byte[] iv = {'D', 'B', 'w', 'k', 'F', '?', 'v', '3', 'u', '6', '<', '0', 'V', 'Q', '1', '2'};
+    private final byte[] iv = {' '};
     private final IvParameterSpec ivspec = new IvParameterSpec(iv);
 
     public static AESEncrypter getInstance() {
